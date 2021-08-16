@@ -1,63 +1,63 @@
-# Глава 3.1. Прости проверки
+# Chapter 3.1 Simple Conditions
 
-В настоящата глава ще разгледаме **условните конструкции в езика Java**, чрез които нашата програма може да има различно действие, в зависимост от дадено условие. Ще обясним синтаксиса на условните оператори за проверки (**`if`** и **`if-else`**) с подходящи примери и ще видим в какъв диапазон живее една променлива (нейният **обхват**). Накрая ще разгледаме техники за **дебъгване**, чрез които постъпково да проследяваме пътя, който извървява нашата програма по време на своето изпълнение.
+In this chapter, we will discuss the **conditional statements in the Java language**, through which our program may have different effects, depending on a condition. We will explain the syntax of conditional operators for checks (**`if`** and **`if-else`**) with appropriate examples and we will see in what range a variable lives (its **scope**). Finally, we will go through **debugging** techniques to track the path that runs through our program during implementation.
 
-## Видео
+## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank" href="https://www.youtube.com/watch?v=cXKIVmjEgHw">https://www.youtube.com/watch?v=cXKIVmjEgHw</a>.
+  Watch the video lesson about what we will learn in this chapter: <a target="_blank" href="https://www.youtube.com/watch?v=cXKIVmjEgHw">https://www.youtube.com/watch?v=cXKIVmjEgHw</a>.
 </div>
 
-## Сравняване на числа
+## Comparing numbers
 
-В програмирането можем да сравняваме стойности чрез следните **оператори**:
+In programming, we can compare values using the following **operators**:
 
-* Оператор **`<`** (по-малко)
-* Оператор **`>`** (по-голямо)
-* Оператор **`<=`** (по-малко или равно)
-* Оператор **`>=`** (по-голямо или равно)
-* Оператор **`==`** (равно)
-* Оператор **`!=`** (различно)
+* Operator **`<`** (less than)
+* Operator **`>`** (greater than)
+* Operator **`<=`** (less than or equals)
+* Operator **`>=`** (greater than or equals)
+* Operator **`==`** (equas)
+* Operator **`!=`** (not equals)
 
-При сравнение резултатът е булева стойност – **`true`** или **`false`**, в зависимост от това дали резултатът от сравнението е истина или лъжа.
+When comparing values, the result is of the Boolean type with a value **`true`** or **`false`**, depending on whether the result of the comparison is true or false.
 
-### Примери за сравнение на числа
+### Examples for Comparing Numbers
 
 ![](assets/chapter-3-1-images/00.Comparing-numbers-01.png)
 
-### Оператори за сравнение
+### Comparison Operators
 
-В езика Java можем да използваме следните оператори за сравнение на числови данни:
+In Java, we can use the following comparison operators when comparing numbers:
 
 <table>
 <tr>
-<th>Оператор</th> <th>Означение</th>
+<th>Description of the Operator</th> <th>Notation</th>
 </tr>
 <tr>
-<td>Проверка за равенство</td><td align="center"> == </td>
+<td>Equals to</td><td align="center"> == </td>
 </tr>
 <tr>
-<td>Проверка за различие</td><td align="center"> != </td>
+<td>Not Equals to</td><td align="center"> != </td>
 </tr>
 <tr>
-<td>По-голямо</td><td align="center"> &gt; </td>
+<td>Greater than</td><td align="center"> &gt; </td>
 </tr>
 <tr>
-<td>По-голямо или равно</td><td align="center"> &gt;= </td>
+<td>Gerater than or equals</td><td align="center"> &gt;= </td>
 </tr>
 <tr>
-<td>По-малко</td><td align="center"> &lt; </td>
+<td>Less than</td><td align="center"> &lt; </td>
 </tr>
 <tr>
-<td>По-малко или равно</td><td align="center"> &lt;= </td>
+<td>Less than or equals</td><td align="center"> &lt;= </td>
 </tr>
 </table>
 
-Ето един пример:
+The following example demonstrates how to use comparison operators in expressions:
 
 ![](assets/chapter-3-1-images/00.Comparing-numbers-02.png)
 
-## Прости проверки
+## Simple If Conditions
 
 В програмирането често **проверяваме дадени условия** и извършваме различни действия, според резултата от проверката. Това става чрез проверката **`if`**, която има следната конструкция:
 
