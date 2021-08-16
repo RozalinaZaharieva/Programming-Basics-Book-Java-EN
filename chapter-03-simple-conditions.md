@@ -59,112 +59,118 @@ The following example demonstrates how to use comparison operators in expression
 
 ## Simple If Conditions
 
-В програмирането често **проверяваме дадени условия** и извършваме различни действия, според резултата от проверката. Това става чрез проверката **`if`**, която има следната конструкция:
+In programming, we often **check given conditions** and perform different actions depending on the result. This is done by **`if`** conditional statement, which has the following structure:
 
 ```java
-if (булев израз) {
-    // тяло на условната конструкция, 
-	// което ще се изпълни единствено при верен булев израз;  
+if (condition) {
+    // body of if construction
+	// single command or block of code to be executed if the condition is true  
 }
 ```
 
-### Пример: отлична оценка
+### Example: Excellent Result
 
-Въвеждаме оценка в конзолата и проверяваме дали тя е отлична (**`≥ 5.50`**).
+**Read the grade** from the console and check if it is excellent (**`≥ 5.50`**).
 
 ![](assets/chapter-3-1-images/01.Еxcellent-result-01.png)
 
-Тествайте кода от примера локално. Опитайте да въведете различни оценки, например **4.75**, **5.49**, **5.50** и **6.00**. При оценки **по-малки от 5.50** програмата няма да изведе нищо, а при оценка **5.50 или по-голяма**, ще изведе "**Excellent!**".
+Test the code (from the example) locally. Test with different grades, like **4.75**, **5.49**, **5.50**, and **6.00**. If the grade is **less than 5.50**, the program will not output any result, otherwise (if the grade is **greater than or equals 5.50**), the program will output "**Excellent!**" text.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук:
+Test your solution here:
 [https://judge.softuni.bg/Contests/Practice/Index/651#0](https://judge.softuni.bg/Contests/Practice/Index/651#0).
 
 
-## Проверки с if-else конструкция
+## If-Else Conditions
 
-Конструкцията **`if`** може да съдържа и **`else`** клауза, с която да окажем конкретно действие в случай, че булевият израз (който е зададен в началото **`if (булев израз)`**) върне отрицателен резултат (**`false`**). Така построена, **условната конструкция** наричаме **`if-else`** и поведението ѝ е следното: ако резултатът от условието е **позитивен** (**`true`**) - извършваме действията, описани в къдравите скоби след **`if`** клаузата, a когато е **негативен** (**`false`**) - други действия, намиращи се в къдравите скоби на **`else`** клаузата. Форматът на конструкцията е:
+Simple **`if`** conditions could be extended with **`else`** conditional statement, which specifies a block of code to be executed, if the Boolean expression (defined at the beginning if(condition)) return **`false`**. The resulting **conditional statement** is called **`if-else`** construction and have the following behavior: if the condition returns **positive** (**`true`**) result – will be executed the code described in the curly brackets after the **`if`** clause, otherwise if the condition returns **negative** (**`false`**) result – will be executed the code described in the curly brackets after the **`else`** clause. The format of the construction is:
 
 ```java
-if (булево условие) {
-    // тяло на условната конструкция;
+if (condition) {
+    // body of if construction
+    	// single command or block of code to be executed if the condition is true
 } else {
-    // тяло на else-конструкция;
+    // body of else construction
+    	// single command or block of code to be executed if the condition is false
 }
 ```
 
-### Пример: отлична оценка или не
+### Example: Excellent or Not
 
-Подобно на горния пример, въвеждаме оценка, проверяваме дали е отлична, но **изписваме резултат и в двата случая**.
+Like the example above, read the grade from the console and check if it is excellent, but you should **return the output in both cases**.
 
 ![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#1](https://judge.softuni.bg/Contests/Practice/Index/651#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#1](https://judge.softuni.bg/Contests/Practice/Index/651#1).
 
 
-## За къдравите скоби { } след if / else 
+## The Curly Brackets {} After If / Else 
 
-Когато имаме **само една команда** в тялото на **`if` конструкцията**, можем да **пропуснем къдравите скоби**, обозначаващи тялото на условния оператор. Когато искаме да изпълним **блок от код** (група команди), къдравите скоби са **задължителни**. В случай че ги изпуснем, ще се изпълни **само първият ред** след **`if` клаузата**. 
+When we have **only one command** in the body of the **`if` construction**, we can **skip the curly brackets**. When we want to execute **block of code** (group of commands), curly brackets are required, because if we skip them, **only the first line** after the **`if` clause** will be executed.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Добра практика е, <strong>винаги да слагаме къдрави скоби</strong>, понеже това прави кода ни по-четим и по-подреден.</td>
+<td>It is a good practice to <strong>always put curly brackets</strong>, because it makes our code more readable and cleaner.</td>
 </tr></table>
 
-Ето един пример, в който изпускането на къдравите скоби води до объркване:
+Here is an example when skipping curly brackets leads to confusion:
 
 ![](assets/chapter-3-1-images/00.Brackets-tip-01.png)
 
-Изпълнението на горния код ще изведе следния резултат на конзолата:
+Executing the above code will output the following result on the console:
 
 ![](assets/chapter-3-1-images/00.Brackets-tip-03.png)
 
-С използването на къдрави скоби:
+Here is the same example, but with using curly brackets: 
 
 ![](assets/chapter-3-1-images/00.Brackets-tip-02.png)
 
-На конзолата ще бъде отпечатано следното:
+Executing the code with curly brackets will output the following result on the console:
 
 ![](assets/chapter-3-1-images/00.Brackets-tip-04.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Абсолютно и двата начина на използване са <strong>правилни</strong> и може да се използват в зависимост от конкретния случай, изискванията в документацията и/или други изисквания, но абсолютно винаги трябва да се внимава и да се съобразим с резултатите.</td>
+<td>Both use cases are <strong>correct</strong> and could be used depending on the concrete case and/or particular requirements, but always must be careful and check with expected results.</td>
 </tr></table>
 
-### Пример: четно или нечетно
+### Example: Even or Odd Number
 
-Да се напише програма, която проверява дали дадено цяло число е **четно** (even) или **нечетно** (odd).
+Write a program that checks whether an integer is **even** or **odd**.
 
-Задачата можем да решим с помощта на една **`if-else`** конструкция и оператора **`%`**, който връща **остатък при деление** на две числа.
+### Hint and Guidelines
+
+We can solve the problem with one **`if-else`** statement and the operator **`%`**, which returns a **remainder by dividing** two numbers.
 
 ![](assets/chapter-3-1-images/03.Even-or-odd-02.png)
 
-Трябва да получим следния отговор:
+Executing the above code will output the following result:
 
 ![](assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#2](https://judge.softuni.bg/Contests/Practice/Index/651#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#2](https://judge.softuni.bg/Contests/Practice/Index/651#2).
 
 
-### Пример: по-голямото число
+### Example: The greater Number
 
-Да се напише програма, която чете две цели числа и извежда по-голямото от тях.
+Write a program that reads two integer numbers, from the console, and return the greater of them. Print the output in the following format: “Greater number: x”, where the x is the returned number.
 
-Първата ни задача е да **прочетем** двете цели числа. След което, чрез проста **`if-else`** конструкция, в съчетание с **оператора за по-голямо** (**`>`**), да направим проверка. Част от кода е замъглена умишлено, за да изпробваме наученото до момента.
+### Hint and Guidelines
+
+Our first task is to **read** both integer numbers from the console. Then we must perform the check using one **`if-else`** statement in combination with the **operator for greater than** (**`>`**). Part of the code is consciously blurred to test what we have learned so far.
 
 ![](assets/chapter-3-1-images/04.Greater-number-02.png)
 
-Ако всичко е вярно, трябва да получим отговорът по-долу за числата 3 и 5.
+Executing the above code will output the following result for numbers 3 and 5:
 
 ![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#3](https://judge.softuni.bg/Contests/Practice/Index/651#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#3](https://judge.softuni.bg/Contests/Practice/Index/651#3).
 
 
 ## Живот на променлива
