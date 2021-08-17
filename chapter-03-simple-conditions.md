@@ -303,11 +303,11 @@ Another solution, which does not use **`if-else`** constructs, is more appropria
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#6](https://judge.softuni.bg/Contests/Practice/Index/651#6).
 
 
-### Задача: конвертор за мерни единици
+### Exercise: Unit converter
 
-Да се напише програма, която **преобразува разстояние** между следните **8 мерни единици**: **`m`, `mm`, `cm`, `mi`, `in`, `km`, `ft`, `yd`**. Използвайте съответствията от таблицата по-долу:
+Write a program that **converts the distance** between the following **units**: **`m`, `mm`, `cm`, `mi`, `in`, `km`, `ft`, `yd`**. Use the table below when a conversion from one unit to another:
 
-| Входна eдиница | Изходна eдиница |
+| Input Unit | Output Unit |
 | :-------------: | :--------------: |
 | 1 meter (m) | 1000 millimeters (mm) |
 | 1 meter (m) | 100 centimeters (cm) |
@@ -317,33 +317,33 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#6
 | 1 meter (m) | 3.2808399 feet (ft)  |
 | 1 meter (m) | 1.0936133 yards (yd) |
 
-Входните данни се състоят от три реда:
+You have three input lines:
 
-- Първи ред: число за преобразуване.
-- Втори ред: входна мерна единица.
-- Трети ред: изходна мерна единица (за резултата).
+- First line: a number for converting.
+- Second line: input unit.
+- Third line: output unit (for the result).
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 12 <br>km <br>ft | 39370.0788 |
 | 150 <br>mi <br>in | 9503999.99393599 |
 | 450 <br>yd <br>km | 0.41147999937455 |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Прочитаме си входните данни, като към прочитането на мерните единици можем да добавим функцията **`toLowerCase()`**, която ще направи всички букви малки. Както виждаме от таблицата в условието, можем да конвертираме само **между метри и някаква друга мерна единица**. Следователно трябва първо да изчислим числото за преобразуване в метри. Затова трябва да направим набор от проверки, за да определим каква е входната мерна единица, а след това и за изходната мерна единица.
+Read the input data, and you can use **`toLowerCase()`**. The function will make all letters lowercase. As you can see from the table in the condition, you can convert **between meters and some other unit**. Then, first calculate the number for converting in meters. This will require to do a set of checks to define the input unit. Then calculate the output unit.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Имайте в предвид, че в Java сравняването на стрингове не работи с използването на  <strong><code>==</code></strong> и трябва да се използват вградените за тази цел функции за сравнение на стрингове.</td>
+<td>Keep in mind that in Java, you cannot use operator <strong><code>==</code></strong> for string comparison. For this purpose, you may use the built-in functions.</td>
 </tr></table>
 
 ![](assets/chapter-3-1-images/08.Metric-converter-01.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#7](https://judge.softuni.bg/Contests/Practice/Index/651#7).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#7](https://judge.softuni.bg/Contests/Practice/Index/651#7).
 
 
 ## Дебъгване - прости операции с дебъгер
