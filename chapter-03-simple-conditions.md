@@ -229,7 +229,7 @@ The program logic from the above example **sequentially compares** the input dig
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#4](https://judge.softuni.bg/Contests/Practice/Index/651#4).
 
 
-## Exercises: Simple Conditions
+## Exercises: Sequence of If-Else Conditions
 
 To consolidate our knowledge of the conditional constructions **`if`** and **`if-else`**, let's solve several practical problems.
 
@@ -346,25 +346,26 @@ Read the input data, and you can use **`toLowerCase()`**. The function will make
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#7](https://judge.softuni.bg/Contests/Practice/Index/651#7).
 
 
-## Дебъгване - прости операции с дебъгер
+## Debugging
 
-До момента писахме доста код и често пъти в него имаше грешки, нали? Сега ще покажем един инструмент, с който можем да намираме грешките по-лесно.
+There were probably errors in the code you wrote so far. There is a way to find errors more easily, using a tool. In the following section, we will look at one of them.
 
-### Какво е "дебъгване"?
+### What is "Debugging"?
 
 **Дебъгване** е процесът на "**закачане**" към изпълнението на програмата, който ни позволява да проследим поетапно цялостния процес на изпълнение. Можем да следим **ред по ред** какво се случва с нашата програма, какъв път следва, какви стойности имат дефинираните променливи на всяка стъпка от дебъгването и много други неща, които ни позволяват да откриваме грешки (**бъгове**).
+**Debugging** lets you find and resolve errors, called **bugs**, a lot faster. Debugging is the process that lets you **track step by step the execution of a program** This tracking is possible by pausing the execution of the program and **analyzing** its state by thorough examination, **line by line**, of logic that follows, defined variables and how they are changed, and so on.
 
 ![](assets/chapter-3-1-images/00.Debugging-01.png)
 
-### Дебъгване в IntelliJ Idea
+### Debugging with IntelliJ Idea
 
-Чрез комбинация от бутоните [**Shift + F9**], стартираме текущата програма в **debug режим**. Преминаваме към **следващия ред** с [**F7**]. 
+By pressing, a combination of buttons [**Shift + F9**], you run the current program in **debug mode**. To move to **the next line** in the code, use the [**F7**] button.
 
 ![](assets/chapter-3-1-images/00.Debugging-02.png)
 
-Чрез [**CTRL + F8**] създаваме стопери – така наречените **breakpoints**, до които можем да стигнем директно при стартирането на програмата.
+By pressing, a combination of buttons [**CTRL + F8**] you create special markers called **breakpoints**, which suspend program execution at a specific point.
 
-## Упражнения: прости проверки
+## Exercises: Simple Conditions
 
 Нека затвърдим наученото в тази глава с няколко задачи.
 
