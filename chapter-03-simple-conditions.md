@@ -1,6 +1,6 @@
 # Chapter 3.1 Simple Conditions
 
-In this chapter, we will discuss the **conditional statements in the Java language**, through which our program may have different effects, depending on a condition. We will explain the syntax of conditional operators for checks (**`if`** and **`if-else`**) with appropriate examples and we will see in what range a variable lives (its **scope**). Finally, we will go through **debugging** techniques to track the path that runs through our program during implementation.
+In this chapter, we will discuss the **conditional statements in the Java language**, through which our program may have different effects, depending on the condition. We will explain the syntax of conditional operators for checks (**`if`** and **`if-else`**) with appropriate examples and will see in what range a variable lives (its **scope**). Finally, we will go through **debugging** techniques to track the path that runs through our program during implementation.
 
 ## Video
 
@@ -173,33 +173,37 @@ Executing the above code will output the following result for numbers 3 and 5:
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#3](https://judge.softuni.bg/Contests/Practice/Index/651#3).
 
 
-## Живот на променлива
+## Variable Scope
 
-Всяка една променлива си има обхват, в който съществува, наречен **variable scope**. Този обхват уточнява къде една променлива може да бъде използвана. В езика Java областта, в която една променлива съществува, започва от реда, на който сме я **дефинирали** и завършва до първата затваряща къдрава скоба **`}`** (на метода, на **`if` конструкцията** и т.н.). За това е важно да знаем, че **всяка променлива, дефинирана вътре в тялото на `if`, няма да бъде достъпна извън него**, освен ако не сме я дефинирали по-нагоре в кода.
+Each variable has a scope in which it exists, called **variable scope**. This scope determines the lifetime of the variable, viz. the scope where be able to use. In the Java language, a variable scope begins from the line in which we **defined it** and ends with the first closing curly bracket **`}`** (of the method, of the **`if` statement**, etc.).Thus, it is important to know that **any variable defined inside the body of `if` statement will not be available outside of it**, unless we have defined it above in the code.
 
-В примерa по-долу, на последния ред, на който се опитваме да отпечатаме променливата **`salary`**, която е дефинирана в **`if` конструкцията**, ще получим **грешка**, защото нямаме достъп до нея (в случай и самото **IDE** ни предупреждава за **variable scope**).
+In the example below we will get an **error**, because on the last line we are trying to print the variable **`salary`** that is defined inside the **`if` statement**, and we do not have access to it outside the if statement (in this case we will receive notification from the **IDE** about variable scope).
 
 ![](assets/chapter-3-1-images/00.Variable-scope-01.png)
 
-## Серии от проверки
+## Sequence of If-Else Conditions
 
-Понякога се налага да извършим серия от проверки, преди да решим какви действия ще изпълнява нашата програма. В такива случаи, можем да приложим конструкцията **`if-else if…-else` в серия**. За целта използваме следния формат: 
+Sometimes we need to do a sequence of conditions before we decide what actions our program will execute. In such cases, we can apply the construction  **`if-else if… -else`**. For this purpose, we use the following format:
 
 ```java
-if (условие) {
-    // тяло на условната конструкция;
+if (condition) {
+    // body of if construction
 } else if (условие2) {
-    // тяло на условната конструкция;
+    // body of if construction
 } else if (условие3) {
-    // тяло на условната конструкция;
+    // body of if construction
 } … else {
-    // тяло на else-конструкция;
+    // body of else construction
 }
 ```
 
-### Пример: число от 1 до 9 на английски
+### Example: Digits 0..9 to Text
 
-Да се изпише число в интервала от 1 до 9 с текст на английски език (числото се чете от конзолата). Можем да прочетем числото и след това чрез **серия от проверки** отпечатваме съответстващата му английска дума:
+Print the digit in rage from 1 to 9 in English (digit is read from the console). 
+
+### Hint and Guidelines
+
+First, we read the digit from the console. Then using a **sequence of conditions** and print the relevant English word:
 
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -218,83 +222,85 @@ if (num == 1) {
 }
 ```
 
-Програмната логика от примера по-горе **последователно сравнява** входното число от конзолата с цифрите от 1 до 9, като **всяко следващо сравнение се извършва, само в случай че предходното сравнение не е било истина**. В крайна сметка, ако никое от **`if`**  условията не е изпълнено, се изпълнява последната **`else` клаузa**.
+The program logic from the above example **sequentially compares** the input digit from the console with the numbers from 1 to 9. **Each following comparison is being performed only in case the preceding comparison is false**. If none of the **`if`** statements return true, then the last **`else` clause** is executed.
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#4](https://judge.softuni.bg/Contests/Practice/Index/651#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#4](https://judge.softuni.bg/Contests/Practice/Index/651#4).
 
 
-## Упражнения: прости проверки
+## Exercises: Simple Conditions
 
-За да затвърдим знанията си за условните конструкции **`if`** и **`if-else`**, ще решим няколко практически задачи.
+To consolidate our knowledge of the conditional constructions **`if`** and **`if-else`**, let's solve several practical problems.
 
-### Задача: бонус точки 
 
-Дадено е **цяло число** – брой точки. Върху него се начисляват **бонус точки** по правилата, описани по-долу. Да се напише програма, която пресмята **бонус точките** за това число и **общия брой точки** с бонусите.
+### Exercise: Bonus score
 
-- Ако числото е **до 100** включително, бонус точките са 5.
-- Ако числото е **по-голямо от 100**, бонус точките са **20%** от числото.
-- Ако числото е **по-голямо от 1000**, бонус точките са **10%** от числото.
-- Допълнителни бонус точки (начисляват се отделно от предходните):
- - За **четно** число → + 1 т.
- - За число, което **завършва на 5** → + 2 т.
+An **integer** is read from the console - the number of points. A **bonus score** adds to it according to the rules described below. Write a program that calculates the **bonus score** for this integer and **the total number of points** with the bonuses.
+
+- If the integer is **up to 100** inclusive, the bonus score is 5.
+- If the integer is **greater than 100**, the bonus score is **20%** from the integer.
+- If the integer is **greater than 1000**, the bonus score is **10%** from the integer.
+- Additional bonus score (added separately from previous)
+ - If the integer is **even** -> +1 bonus score
+ - If the integer is odd, with **last digit equals 5** -> +2 bonus score 
  
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 20 | 6<br>26 |
 | 175 | 37<br>212 |
 | 2703 | 270.3<br>2973.3 |
 | 15875 | 1589.5<br>17464.5 |
 
-#### Насоки и подсказки
+#### Sample Input and Output
 
-Основните и допълнителните бонус точки можем да изчислим с поредица от няколко **`if-else-if-else`** проверки. Като за **основните бонус точки имаме 3 случая** (когато въведеното число е до 100, между 100 и 1000 и по-голямо от 1000), а за **допълнителните бонус точки - още 2 случая** (когато числото е четно и нечетно).
+You can calculate the main and additional bonus score with a sequence of **`if-else-if-else`** statements. For **the main bonus score, we have 3 cases** (when the input integer is up to 100, between 100 and 1000, and greater than 1000). For **the additional bonus score – 2 more cases** (when the integer is even and odd, ended with 5).
 
 ![](assets/chapter-3-1-images/06.Bonus-score-01.png)
 
-Ето как би могло да изглежда решението на задачата в действие:
+Executing the above code will output the following result:
 
 ![](assets/chapter-3-1-images/06.Bonus-score-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#5](https://judge.softuni.bg/Contests/Practice/Index/651#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#5](https://judge.softuni.bg/Contests/Practice/Index/651#5).
 
 
-### Задача: сумиране на секунди
+### Exercise: Summation of seconds
 
-Трима спортни състезатели финишират за някакъв **брой секунди** (между **1** и **50**). Да се напише програма, която въвежда времената на състезателите и пресмята **сумарното им време** във формат "минути:секунди". Секундите да се изведат с **водеща нула** (2 → "02", 7 → "07", 35 → "35").
+Three athletes finish in a particular number of **seconds** (between **1** and **50**). Write a program that reads the times of these from the console and calculates their **total time** in "minutes:seconds" format. Seconds need to be **zeroed at the front** (2 -> "02", 7 -> "07", 35 -> "35").
 
-#### Примерен вход и изход
+#### Sample Input and Output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 35<br>45<br>44 | 2:04 |
 | 22<br>7<br>34 | 1:03 |
 | 50<br>50<br>49 | 2:29 |
 | 14<br>12<br>10 | 0:36 |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Задачата можем да решим по няколко начина. Първият, който съвпада с темата, е следният:
-Първо сумираме трите числа, за да получим общия резултат в секунди. Понеже **1 минута = 60** секунди, ще трябва да изчислим броя минути и броя секунди в диапазона от 0 до 59:
-- Ако резултатът е между 0 и 59, отпечатваме 0 минути + изчислените секунди.
-- Ако резултатът е между 60 и 119, отпечатваме 1 минута + изчислените секунди минус 60.
-- Ако резултатът е между 120 и 179, отпечатваме 2 минути + изчислените секунди минус 120.
-- Ако секундите са по-малко от 10, извеждаме водеща нула преди тях.
+The task has several solutions, but in the context of this chapter, you can do the following:
+First, sum up the three numbers to get the total result in seconds. Since **1 minute = 60 seconds**, you will have to calculate the number of minutes and seconds in the range 0 to 59:
+
+- If the result is between 0 and 59, print 0 minutes + calculated seconds.
+- If the result is between 60 and 119, print 1 minute + calculate seconds minus 60.
+- If the result is between 120 and 179, print 2 minutes + calculate seconds minus 120.
+- If the seconds are less than 10, print the number with zero in front.
 
 ![](assets/chapter-3-1-images/07.Sum-seconds-01.png)
 
-Вторият начин, който не използва конструкции **`if-else`**, е по-удачен, защото може да се използва за големи стойности на времената:
+Another solution, which does not use **`if-else`** constructs, is more appropriate because you can use it for greater time values:
 
 ![](assets/chapter-3-1-images/07.Sum-seconds-02.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#6](https://judge.softuni.bg/Contests/Practice/Index/651#6).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#6](https://judge.softuni.bg/Contests/Practice/Index/651#6).
 
 
 ### Задача: конвертор за мерни единици
