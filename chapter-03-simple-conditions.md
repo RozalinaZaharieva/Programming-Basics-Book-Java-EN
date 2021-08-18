@@ -366,7 +366,7 @@ By pressing, a combination of buttons [**CTRL + F8**] you create special markers
 
 ## Exercises: Simple Conditions
 
-Now, let's enrich the skills acquired about conditional statements ("**`if`**" and "**`if-else`**") covered in this chapter. We will solve a few practical exercises. 
+To get a better understanding of what we learned, let's solve a few practical exercises.
 
 ### Empty project in IntelliJ Idea
 
