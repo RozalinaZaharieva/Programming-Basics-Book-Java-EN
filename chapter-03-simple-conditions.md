@@ -404,7 +404,7 @@ Create a **new class** in the existing project in **IntelliJ Idea** by right-cli
 
  ![](assets/chapter-3-1-images/09.Excellent-result-01.png)
 
-A dialog box with two fields will open - in the upper one - enter the name of the class, and in the lower one - the type (there are other options besides classes, but so far they are out of our scope), then press [**OK**] button to create our class. We set a name, for example, "Excellent-Result":
+A dialog box with two fields will open. In the upper one - enter the name of the class, and in the lower one - the type (there are other options besides classes, but so far they are out of our scope), then press [**OK**] button to create our class. We set a name, for example, "Excellent-Result":
 
  ![](assets/chapter-3-1-images/09.Excellent-result-02.png)
  
