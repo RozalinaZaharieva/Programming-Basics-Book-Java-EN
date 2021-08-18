@@ -1,6 +1,6 @@
 # Chapter 3.1 Simple Conditions
 
-In this chapter will discuss **conditional statements in the Java language**. Depending on the condition, a program may have different behavior. Will be explained the syntax of conditional operators **`if`** and **`if-else`** with appropriate examples. Then will see in what range (**scope**) a variable lives. Finally, will look through **debugging** techniques to track the step-by-step execution of our programs.
+This chapter will discuss **conditional statements in the Java language**. Depending on the condition, a program may have different behavior. First will be explained the syntax of conditional operators **`if`** and **`if-else`** with appropriate examples. Then will see in what range (**scope**) a variable lives. Finally, we will look through **debugging** techniques to track the step-by-step execution of our programs.
 
 ## Video
 
@@ -84,7 +84,7 @@ Test your solution here:
 
 ## If-Else Conditions
 
-Simple **`if`** conditions could be extended with **`else`** conditional statement, which specifies a block of code to be executed, if the Boolean expression (defined at the beginning if(condition)) return **`false`**. The resulting **conditional statement** is called **`if-else`** construction and have the following behavior: if the condition returns **positive** (**`true`**) result – will be executed the code described in the curly brackets after the **`if`** clause, otherwise if the condition returns **negative** (**`false`**) result – will be executed the code described in the curly brackets after the **`else`** clause. The format of the construction is:
+Simple **`if`** conditions could be extended with **`else`** conditional statement, which specifies a block of code to be executed, if the Boolean expression (defined at the beginning **if(condition)**) return **`false`**. The resulting **conditional statement** is called **`if-else`** construction and have the following behavior: if the condition returns **positive** (**`true`**) result – will be executed the code described in the curly brackets after the **`if`** clause, otherwise if the condition returns **negative** (**`false`**) result – will be executed the code described in the curly brackets after the **`else`** clause. The format of the construction is:
 
 ```java
 if (condition) {
@@ -98,7 +98,7 @@ if (condition) {
 
 ### Example: Excellent or Not
 
-Like the example above, read the grade from the console and check if it is excellent, but you should **return the output in both cases**.
+Like the example above, read the grade from the console and check if it is excellent, but we should **return the output in both cases**.
 
 ![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
@@ -115,7 +115,7 @@ When we have **only one command** in the body of the **`if` construction**, we c
 <td>It is a good practice to <strong>always put curly brackets</strong>, because it makes our code more readable and cleaner.</td>
 </tr></table>
 
-Here is an example when skipping curly brackets leads to confusion:
+Here is an example that skipping curly brackets leads to confusion:
 
 ![](assets/chapter-3-1-images/00.Brackets-tip-01.png)
 
@@ -175,7 +175,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#3
 
 ## Variable Scope
 
-Each variable has a scope in which it exists, called **variable scope**. This scope determines the lifetime of the variable, viz. the scope where be able to use. In the Java language, a variable scope begins from the line in which we **defined it** and ends with the first closing curly bracket **`}`** (of the method, of the **`if` statement**, etc.).Thus, it is important to know that **any variable defined inside the body of `if` statement will not be available outside of it**, unless we have defined it above in the code.
+Each variable has a scope in which it exists, called **variable scope**. This scope determines the lifetime of the variable, viz. the scope where be able to use. In the Java language, a variable scope begins from the line in which we **defined it** and ends with the first closing curly bracket **`}`** (of the method, of the **`if` statement**, etc.). Thus, it is important to know that **any variable defined inside the body of `if` statement will not be available outside of it**, unless we have defined it above in the code.
 
 In the example below we will get an **error**, because on the last line we are trying to print the variable **`salary`** that is defined inside the **`if` statement**, and we do not have access to it outside the if statement (in this case we will receive notification from the **IDE** about variable scope).
 
@@ -256,7 +256,7 @@ An **integer** is read from the console - the number of points. A **bonus score*
 
 #### Sample Input and Output
 
-You can calculate the main and additional bonus score with a sequence of **`if-else-if-else`** statements. For **the main bonus score, we have 3 cases** (when the input integer is up to 100, between 100 and 1000, and greater than 1000). For **the additional bonus score – 2 more cases** (when the integer is even and odd, ended with 5).
+We can calculate the main and additional bonus score with a sequence of **`if-else-if-else`** statements. For **the main bonus score, we have 3 cases** (when the input integer is up to 100, between 100 and 1000, and greater than 1000). For **the additional bonus score – 2 more cases** (when the integer is even and odd, ended with 5).
 
 ![](assets/chapter-3-1-images/06.Bonus-score-01.png)
 
@@ -284,8 +284,8 @@ Three athletes finish in a particular number of **seconds** (between **1** and *
 
 #### Hint and Guidelines
 
-The task has several solutions, but in the context of this chapter, you can do the following:
-First, sum up the three numbers to get the total result in seconds. Since **1 minute = 60 seconds**, you will have to calculate the number of minutes and seconds in the range 0 to 59:
+The task has several solutions, but in the context of this chapter, we can do the following:
+First, sum up the three numbers to get the total result in seconds. Since **1 minute = 60 seconds**, we will have to calculate the number of minutes and seconds in the range 0 to 59:
 
 - If the result is between 0 and 59, print 0 minutes + calculated seconds.
 - If the result is between 60 and 119, print 1 minute + calculate seconds minus 60.
@@ -317,7 +317,7 @@ Write a program that **converts the distance** between the following **units**: 
 | 1 meter (m) | 3.2808399 feet (ft)  |
 | 1 meter (m) | 1.0936133 yards (yd) |
 
-You have three input lines:
+The program will receive three input lines:
 
 - First line: a number for converting.
 - Second line: input unit.
@@ -333,7 +333,7 @@ You have three input lines:
 
 #### Hint and Guidelines
 
-Read the input data, and you can use **`toLowerCase()`**. The function will make all letters lowercase. As you can see from the table in the condition, you can convert **between meters and some other unit**. Then, first calculate the number for converting in meters. This will require to do a set of checks to define the input unit. Then calculate the output unit.
+Read the input data. We can use the **`toLowerCase()`** function, which will make all letters lowercase. As we can see from the table in the condition, we can convert **between meters and some other unit**. Then, first calculate the result from converting the input number in meters, doing a set of checks to define the input unit. Then calculate the output unit.
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
 <td>Keep in mind that in Java, you cannot use operator <strong><code>==</code></strong> for string comparison. For this purpose, you may use the built-in functions.</td>
@@ -352,7 +352,6 @@ There were probably errors in the code you wrote so far. There is a way to find 
 
 ### What is "Debugging"?
 
-**Дебъгване** е процесът на "**закачане**" към изпълнението на програмата, който ни позволява да проследим поетапно цялостния процес на изпълнение. Можем да следим **ред по ред** какво се случва с нашата програма, какъв път следва, какви стойности имат дефинираните променливи на всяка стъпка от дебъгването и много други неща, които ни позволяват да откриваме грешки (**бъгове**).
 **Debugging** lets you find and resolve errors, called **bugs**, a lot faster. Debugging is the process that lets you **track step by step the execution of a program** This tracking is possible by pausing the execution of the program and **analyzing** its state by thorough examination, **line by line**, of logic that follows, defined variables and how they are changed, and so on.
 
 ![](assets/chapter-3-1-images/00.Debugging-01.png)
