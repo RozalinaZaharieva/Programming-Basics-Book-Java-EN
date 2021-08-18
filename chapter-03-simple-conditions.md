@@ -269,7 +269,7 @@ Executing the above code will output the following result:
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#5](https://judge.softuni.bg/Contests/Practice/Index/651#5).
 
 
-### Exercise: Summation of seconds
+### Exercise: Summing Up seconds
 
 Three athletes finish in a particular number of **seconds** (between **1** and **50**). Write a program that reads the times of these from the console and calculates their **total time** in "minutes:seconds" format. Seconds need to be **zeroed at the front** (2 -> "02", 7 -> "07", 35 -> "35").
 
@@ -366,22 +366,22 @@ By pressing, a combination of buttons [**CTRL + F8**] you create special markers
 
 ## Exercises: Simple Conditions
 
-Now, let's enrich the skills acquired about conditional statements ("if" and "if-else") covered in this chapter. We will solve a few practical exercises. 
+Now, let's enrich the skills acquired about conditional statements ("**`if`**" and "**`if-else`**") covered in this chapter. We will solve a few practical exercises. 
 
-### Празен Java проект в IntelliJ Idea
+### Empty project in IntelliJ Idea
 
-Създаваме нов проект (**Java**) в IntelliJ Idea, без да маркираме абсолютно нищо. За да организираме по-добре решенията на задачите от упражненията – всяка задача ще бъде в отделен клас и всички класове ще бъдат в **src** директорията на проекта.
+Create a new project with name **Java** in IntelliJ Idea and leave all others options by default. In order to better organize the solutions of the tasks from the exercises - each solution will be in a separate class and all classes will be in the **src** directory of the project.
 
-Стартираме IntelliJ Idea. Създаваме нов **Java project:** [**File**] → [**New**] → [**Project**].
+Run IntelliJ Idea. Create a new **Java project:** [**File**] → [**New**] → [**Project**].
 
 ![](assets/chapter-3-1-images/00.IntelliJ-01.png)
 
-Избираме от левият панел **Java**, без да маркираме нищо друго и натискаме [**Next**]. В следващия диалогов прозорец имаме няколко варианта, от които единият е да се конфигурира **ConsoleApp**. Обикновенно това ще правим, но може да не се маркира нищо и да дадем пак [**Next**]. В последния диалогов прозорец даваме име на проекта и място за съхранение, след което натискаме [**Finish**].
+Choose **Java** from the left panel and anything else leaves it by default, and press [**Next**]. In the next dialog box, we have an option to create a project from a template. Usually, we will do this, but now we can skip it and press [**Next**]. In the last dialog box, enter the project's name and storage location, and then click [**Finish**].
 
 ![](assets/chapter-3-1-images/00.IntelliJ-02.png)
 ![](assets/chapter-3-1-images/00.IntelliJ-03.png)
 
-Сега вече имаме създаден празен Java проект:  
+We now have an empty Java project:
 
 ![](assets/chapter-3-1-images/00.IntelliJ-04.png)
 
