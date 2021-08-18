@@ -385,9 +385,9 @@ We now have an empty Java project:
 
 ![](assets/chapter-3-1-images/00.IntelliJ-04.png)
 
-### Exersice: Check for Excellent Grade
+### Exercise: Check for Excellent Grade
 
-The first task of the exercises on the topic is to write a **program that reads input data from the console**. As input data **enters a score** (decimal number) and as output print "**Excellent!**" if the score is **5.50** or above. 
+The first task of the exercises on the topic is to write a **program that reads input data from the console**. As input data **enter a score** (decimal number) and as output print "**Excellent!**" if the score is **5.50** or above. 
 
 #### Sample input and output
 
@@ -400,7 +400,7 @@ The first task of the exercises on the topic is to write a **program that reads 
 
 #### Hint and Guidelines
 
-Create a **new class** in the existing project in **IntelliJ Idea** by right-click over  [**src**] folder. Choose [**New**] → [**Java Class**]: 
+Create a **new class** in the existing project in **IntelliJ Idea** by right-click over  [**src**] folder. Choose [**New**] → [**Java Class**].
 
  ![](assets/chapter-3-1-images/09.Excellent-result-01.png)
 
@@ -429,9 +429,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#0
  ![](assets/chapter-3-1-images/09.Excellent-result-07.png)
 
 
-### Exersice: Excellent Grade or Not
+### Exercise: Excellent Grade or Not
 
-The next task of the exercises on the topic is to write a **program that reads input data from the console**. As input data **enters a score** (decimal number). As output print "**Excellent!**" if the score is **5.50** or above, otherwise "**Not excellent!**".
+The next task of the exercises on the topic is to write a **program that reads input data from the console**. As input data **enter a score** (decimal number). As output print "**Excellent!**" if the score is **5.50** or above, otherwise "**Not excellent!**".
 
 #### Sample input and output
 
@@ -444,7 +444,7 @@ The next task of the exercises on the topic is to write a **program that reads i
 
 #### Hint and Guidelines
 
-Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src'**] folder. Choose [**New**] → [**Java Class**]:
+Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src'**] folder. Choose [**New**] → [**Java Class**].
 
 We already have a class with one console application in it. It remains to **write the code** to solve the problem. We can help ourselves with the sample code from the picture:
 
@@ -462,60 +462,60 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#1
  ![](assets/chapter-3-1-images/02.Excellent-or-not-04.png)
 
 
-### Задача: четно или нечетно
+### Exercise: Even or Odd Number
 
-Да се напише програма, която въвежда **цяло число** и печата дали е **четно** или **нечетно**.
+The next task is to write a **program that reads input data from the console**. As input data enter **an integer**. As output print **even** or **odd**.
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 2 | even |
 | 3 | odd |
 | 25 | odd |
 | 1024 | even |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Създаваме **нов клас** в съществуващия проект в **IntelliJ Idea**, като кликваме с десен бутон на мишката върху папката [**src'**]. Избираме [**New**] → [**Java Class**]:  
+Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src'**] folder. Choose [**New**] → [**Java Class**].
   
- В метода **`public static void main()`** трябва да напишем кода на програмата. Проверката дали дадено число е четно, може да се реализира с оператора **`%`**, който ще ни върне **остатъка при целочислено деление на 2** по следния начин: **`boolean isEven = (number %2 == 0);`**.
+In the main method, **`public static void main()`** write the code to solve the problem. To check if a number is even, we ca use operator **`%`**, which returns **the remainder of integer division by 2** in following way: **`boolean isEven = (number %2 == 0);`**.
 
-Остава да **стартираме** програмата и да я тестваме:  
+**Run** the program from the green arrow in front of the class name to **test it** with different input values:
 
 ![](assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#2](https://judge.softuni.bg/Contests/Practice/Index/651#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#2](https://judge.softuni.bg/Contests/Practice/Index/651#2).
 
 
-### Задача: намиране на по-голямото число
+### Exercise: Find the Greater Number
 
-Да се напише програма, която въвежда **две цели числа** и отпечатва по-голямото от двете.
+The next task is to write a **program that reads input data from the console**. As input data, enter **two integers** each on a separate line. As output print the greater integer of them.
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 |-----|------|
 |5<br>3| 5 |
 |3<br>5| 5 |
 |10<br>10| 10 |
 |-5<br>5| 5 |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Създаваме **нов клас** в съществуващия проект в **IntelliJ Idea**, като кликваме с десен бутон на мишката върху папката [**src'**]. Избираме [**New**] → [**Java Class**]. За кода на програмата ни е необходима единична **`if-else`** конструкция. Може да си помогнете частично с кода от картинката, който е умишлено замъглен, за да помислите как да го допишете сами:  
+Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src'**] folder. Choose [**New**] → [**Java Class**]. To solve the problem is necessary one **`if-else`** statement. You can use the code from the image below, but part of it is consciously blurred.
 
 ![](assets/chapter-3-1-images/04.Greater-number-02.png)
 
-След като сме готови с имплементацията на решението, **стартираме** програмата и я тестваме:
+**Run** the program from the green arrow in front of the class name to **test it** with different input values:
 
 ![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#3](https://judge.softuni.bg/Contests/Practice/Index/651#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#3](https://judge.softuni.bg/Contests/Practice/Index/651#3).
 
 
 ### Задача: изписване на число до 9 с думи
