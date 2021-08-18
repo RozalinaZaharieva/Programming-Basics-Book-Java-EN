@@ -76,7 +76,7 @@ if (condition) {
 
 Test the code (from the example) locally. Test with different grades, like **4.75**, **5.49**, **5.50**, and **6.00**. If the grade is **less than 5.50**, the program will not output any result, otherwise (if the grade is **greater than or equals 5.50**), the program will output "**Excellent!**" text.
 
-#### Testing in the Judge System
+#### Test the code in the Judge System
 
 Test your solution here:
 [https://judge.softuni.bg/Contests/Practice/Index/651#0](https://judge.softuni.bg/Contests/Practice/Index/651#0).
@@ -96,13 +96,13 @@ if (condition) {
 }
 ```
 
-### Example: Excellent or Not
+### Example: Excellent Grade or Not
 
 Like the example above, read the grade from the console and check if it is excellent, but we should **return the output in both cases**.
 
 ![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
-#### Testing in the Judge System
+#### Test the code in the Judge System
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#1](https://judge.softuni.bg/Contests/Practice/Index/651#1).
 
@@ -149,7 +149,7 @@ Executing the above code will output the following result:
 
 ![](assets/chapter-3-1-images/03.Even-or-odd-01.png)
 
-#### Testing in the Judge System
+#### Test the code in the Judge System
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#2](https://judge.softuni.bg/Contests/Practice/Index/651#2).
 
@@ -168,7 +168,7 @@ Executing the above code will output the following result for numbers 3 and 5:
 
 ![](assets/chapter-3-1-images/04.Greater-number-01.png)
 
-#### Testing in the Judge System
+#### Test the code in the Judge System
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#3](https://judge.softuni.bg/Contests/Practice/Index/651#3).
 
@@ -224,7 +224,7 @@ if (num == 1) {
 
 The program logic from the above example **sequentially compares** the input digit from the console with the numbers from 1 to 9. **Each following comparison is being performed only in case the preceding comparison is false**. If none of the **`if`** statements return true, then the last **`else` clause** is executed.
 
-#### Testing in the Judge System
+#### Test the code in the Judge System
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#4](https://judge.softuni.bg/Contests/Practice/Index/651#4).
 
@@ -264,7 +264,7 @@ Executing the above code will output the following result:
 
 ![](assets/chapter-3-1-images/06.Bonus-score-02.png)
 
-#### Testing in the Judge System
+#### Test the code in the Judge System
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#5](https://judge.softuni.bg/Contests/Practice/Index/651#5).
 
@@ -298,7 +298,7 @@ Another solution, which does not use **`if-else`** constructs, is more appropria
 
 ![](assets/chapter-3-1-images/07.Sum-seconds-02.png)
 
-#### Testing in the Judge System
+#### Test the code in the Judge System
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#6](https://judge.softuni.bg/Contests/Practice/Index/651#6).
 
@@ -341,7 +341,7 @@ Read the input data. We can use the **`toLowerCase()`** function, which will mak
 
 ![](assets/chapter-3-1-images/08.Metric-converter-01.png)
 
-#### Testing in the Judge System
+#### Test the code in the Judge System
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#7](https://judge.softuni.bg/Contests/Practice/Index/651#7).
 
@@ -366,7 +366,7 @@ By pressing, a combination of buttons [**CTRL + F8**] you create special markers
 
 ## Exercises: Simple Conditions
 
-Нека затвърдим наученото в тази глава с няколко задачи.
+Now, let's enrich the skills acquired about conditional statements ("if" and "if-else") covered in this chapter. We will solve a few practical exercises. 
 
 ### Празен Java проект в IntelliJ Idea
 
@@ -385,7 +385,7 @@ By pressing, a combination of buttons [**CTRL + F8**] you create special markers
 
 ![](assets/chapter-3-1-images/00.IntelliJ-04.png)
 
-### Exersice: Check for excellent grade
+### Exersice: Check for Excellent Grade
 
 The first task of the exercises on the topic is to write a **program that reads input data from the console**. As input data **enters a score** (decimal number) and as output print "**Excellent!**" if the score is **5.50** or above. 
 
@@ -404,7 +404,7 @@ Create a **new class** in the existing project in **IntelliJ Idea** by right-cli
 
  ![](assets/chapter-3-1-images/09.Excellent-result-01.png)
 
-A dialog box with two fields will open - in the upper one - enter the name of the class, and in the lower one - the type (there are other options besides classes, but so far they are out of our scope), then we create our class. We set a name, for example, "Evaluations":
+A dialog box with two fields will open - in the upper one - enter the name of the class, and in the lower one - the type (there are other options besides classes, but so far they are out of our scope), then press [**OK**] button to create our class. We set a name, for example, "Excellent-Result":
 
  ![](assets/chapter-3-1-images/09.Excellent-result-02.png)
  
@@ -420,7 +420,7 @@ To do this, go to the body of the method **`main (string [] args)`** and place t
 
  ![](assets/chapter-3-1-images/09.Excellent-result-05.png)
 
-#### Testing in the Judge System
+#### Test the code in the Judge System
 
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#0](https://judge.softuni.bg/Contests/Practice/Index/651#0).
 
@@ -429,35 +429,35 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#0
  ![](assets/chapter-3-1-images/09.Excellent-result-07.png)
 
 
-### Задача: отлична оценка или не
+### Exersice: Excellent Grade or Not
 
-Следващата задача от тази тема е да се напише **конзолна програма**, която **въвежда оценка** (десетично число) и отпечатва "**Excellent!**", ако оценката е **5.50** или по-висока, или "**Not excellent.**" в противен случай.
+The next task of the exercises on the topic is to write a **program that reads input data from the console**. As input data **enters a score** (decimal number). As output print "**Excellent!**" if the score is **5.50** or above, otherwise "**Not excellent!**".
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 6 | Excellent! |
 | 5 | Not excellent. |
 | 5.5 | Excellent! |
 | 5.49 | Not excellent. |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Създаваме **нов клас** в съществуващия проект в **IntelliJ Idea** , като кликваме с десен бутон на мишката върху папката [**src'**]. Избираме [**New**] → [**Java Class**].
- 
-Следва да **напишем кода** на програмата. Може да си помогнем с примерния код от картинката:  
+Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src'**] folder. Choose [**New**] → [**Java Class**]:
+
+We already have a class with one console application in it. It remains to **write the code** to solve the problem. We can help ourselves with the sample code from the picture:
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-01.png)
 
-Сега **стартираме програмата** както обикновено със зелената стрелкичка и я тестваме дали работи коректно:
+**Run** the program from the green arrow in front of the class name to **test it** with different input values:
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-02.png)
  ![](assets/chapter-3-1-images/02.Excellent-or-not-03.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#1](https://judge.softuni.bg/Contests/Practice/Index/651#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#1](https://judge.softuni.bg/Contests/Practice/Index/651#1).
 
  ![](assets/chapter-3-1-images/02.Excellent-or-not-04.png)
 
