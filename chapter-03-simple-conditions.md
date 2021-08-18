@@ -68,7 +68,7 @@ if (condition) {
 }
 ```
 
-### Example: Excellent Result
+### Example: Excellent Grade
 
 **Read the grade** from the console and check if it is excellent (**`≥ 5.50`**).
 
@@ -385,44 +385,44 @@ By pressing, a combination of buttons [**CTRL + F8**] you create special markers
 
 ![](assets/chapter-3-1-images/00.IntelliJ-04.png)
 
-### Задача: проверка за отлична оценка
+### Exersice: Check for excellent grade
 
-Първата задача от упражненията за тази тема е да се напише **конзолна програма**, която **въвежда оценка** (десетично число) и отпечатва "**Excellent!**", ако оценката е **5.50** или по-висока.
+The first task of the exercises on the topic is to write a **program that reads input data from the console**. As input data **enters a score** (decimal number) and as output print "**Excellent!**" if the score is **5.50** or above. 
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 6 | Excellent! |
-| 5 | (няма изход) |
+| 5 | (no output) |
 | 5.5 | Excellent! |
-| 5.49 | (няма изход) |
+| 5.49 | (no output) |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Създаваме **нов клас** в съществуващия проект в **IntelliJ Idea**, като кликваме с десен бутон на мишката върху папката [**src**]. Избираме [**New**] → [**Java Class**]:  
+Create a **new class** in the existing project in **IntelliJ Idea** by right-click over  [**src**] folder. Choose [**New**] → [**Java Class**]: 
 
  ![](assets/chapter-3-1-images/09.Excellent-result-01.png)
 
-Ще се отвори диалогов прозорец с 2 поленца - в горното въвеждаме името на класа, а в долното - вида (има и други опции освен класове, но за тях в следващите глави), след което създаваме класа. Задаваме име, например "Evaluations":  
+A dialog box with two fields will open - in the upper one - enter the name of the class, and in the lower one - the type (there are other options besides classes, but so far they are out of our scope), then we create our class. We set a name, for example, "Evaluations":
 
  ![](assets/chapter-3-1-images/09.Excellent-result-02.png)
  
-Вече имаме клас с едно конзолно приложение в него. Остава да напишем кода за решаване на задачата.
+We already have a class with one console application in it. It remains to write the code to solve the problem.
 
-За целта отиваме в тялото на метода **`main(string[] args)`** и поставяме курсора между отварящата и затваряща къдрави скоби на метода. Ако главнията метод не е създаден автоматично в **IntelliJ Idea**, има клавишна комбинация, която прави това - **`psvm`**. Вътре в метода пишем следния код:
+To do this, go to the body of the method **`main (string [] args)`** and place the cursor between the opening and closing curly brackets of the method. If the main method is not created automatically in **IntelliJ Idea**, there is a keyboard shortcut to do this - **`psvm`**. Inside the main method, we write the following code:
 
  ![](assets/chapter-3-1-images/09.Excellent-result-03.png)
 
-**Стартираме** програмата от зелената стрелка пред името на класа, за да я **тестваме** с различни входни стойности:
+**Run** the program from the green arrow in front of the class name to **test it** with different input values:
 
  ![](assets/chapter-3-1-images/09.Excellent-result-04.png)
 
  ![](assets/chapter-3-1-images/09.Excellent-result-05.png)
 
-#### Тестване в Judge системата
+#### Testing in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#0](https://judge.softuni.bg/Contests/Practice/Index/651#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#0](https://judge.softuni.bg/Contests/Practice/Index/651#0).
 
  ![](assets/chapter-3-1-images/09.Excellent-result-06.png) 
 
