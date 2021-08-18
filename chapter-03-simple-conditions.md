@@ -444,7 +444,7 @@ The next task of the exercises on the topic is to write a **program that reads i
 
 #### Hint and Guidelines
 
-Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src'**] folder. Choose [**New**] → [**Java Class**].
+Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src**] folder. Choose [**New**] → [**Java Class**].
 
 We already have a class with one console application in it. It remains to **write the code** to solve the problem. We can help ourselves with the sample code from the picture:
 
@@ -477,7 +477,7 @@ The next task is to write a **program that reads input data from the console**. 
 
 #### Hint and Guidelines
 
-Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src'**] folder. Choose [**New**] → [**Java Class**].
+Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src**] folder. Choose [**New**] → [**Java Class**].
   
 In the main method, **`public static void main()`** write the code to solve the problem. To check if a number is even, we ca use operator **`%`**, which returns **the remainder of integer division by 2** in following way: **`boolean isEven = (number %2 == 0);`**.
 
@@ -505,7 +505,7 @@ The next task is to write a **program that reads input data from the console**. 
 
 #### Hint and Guidelines
 
-Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src'**] folder. Choose [**New**] → [**Java Class**]. To solve the problem is necessary one **`if-else`** statement. You can use the code from the image below, but part of it is consciously blurred.
+Create a **new class** in the existing project in **IntelliJ Idea** by right-click over [**src**] folder. Choose [**New**] → [**Java Class**]. To solve the problem is necessary one **`if-else`** statement. You can use the code from the image below, but part of it is consciously blurred.
 
 ![](assets/chapter-3-1-images/04.Greater-number-02.png)
 
@@ -518,74 +518,73 @@ Create a **new class** in the existing project in **IntelliJ Idea** by right-cli
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#3](https://judge.softuni.bg/Contests/Practice/Index/651#3).
 
 
-### Задача: изписване на число до 9 с думи
+### Exercise: Write the number (from 0 to 9 ) in English.
 
-Да се напише програма, която въвежда **цяло число в диапазона** [**0 … 9**] и го **изписва с думи** на английски език. Ако числото е извън диапазона, изписва "**number too big**".
+The next task is to write a **program that reads input data from the console**. As input data, enter **an integer in range [0 … 9]**. As output, **print the integer in English**. If the integer is outside range, print "**number too big**".
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 5 | five |
 | 1 | one |
 | 9 | nine |
 | 10 | number too big |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Може да използваме поредица **`if-else`** конструкции, с които да разгледаме възможните **11 случая**.
+To solve the problem, we can use sequential **`if-else`** statements to cover **all eleven possible cases**.
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#4](https://judge.softuni.bg/Contests/Practice/Index/651#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#4](https://judge.softuni.bg/Contests/Practice/Index/651#4).
 
 
-### Задача: познай паролата
+### Exercise: Password guess
 
-Да се напише програма, която **въвежда парола** (един ред с произволен текст) и проверява дали въведеното **съвпада** с фразата "**s3cr3t!P@ssw0rd**". При съответствие да се изведе "**Welcome**", а при несъответствие да се изведе "**Wrong password!**". 
+The next task is to write a **program that reads input data from the console**. As input data, enter **a password** (a single line with random text) and check if the input data is **the same** as phrase "**s3cr3t!P@ssw0rd**". As output, print "**Welcome**" if the result is true and "**Wrong password!**" if the result is false.
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | qwerty | Wrong password! |
 | s3cr3t!P@ssw0rd | Welcome |
 | s3cr3t!p@ss | Wrong password! |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Използвайте **`if-else`** конструкцията.
+To solve the problem is necessary one **`if-else`** statement.
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#8](https://judge.softuni.bg/Contests/Practice/Index/651#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#8](https://judge.softuni.bg/Contests/Practice/Index/651#8).
 
 
-### Задача: число от 100 до 200
+### Exercise: Number from 100 to 200
 
-Да се напише програма, която **въвежда цяло число** и проверява дали е **под 100**, **между 100 и 200** или **над 200**. Да се отпечатат съответно съобщения, като в примерите по-долу. 
+The next task is to write a **program that reads input data from the console**. As input data, enter **an integer** and check if the input data is **below 100**, **between 100 and 200**, and **above 200**. As output, print the corresponding message as shown in the table below.
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 95 | Less than 100 |
 | 120 | Between 100 and 200 |
 | 210 | Greater than 200 |
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#9](https://judge.softuni.bg/Contests/Practice/Index/651#9).
+Test your solution here:: [https://judge.softuni.bg/Contests/Practice/Index/651#9](https://judge.softuni.bg/Contests/Practice/Index/651#9).
 
 
-### Задача: еднакви думи
+### Exercise: The same words
 
-Да се напише програма, която **въвежда две думи** и проверява дали са еднакви. Да не се прави разлика между главни и малки букви. 
-Да се изведе "**yes**" или "**no**". 
+The next task is to write a **program that reads input data from the console**. As input data, enter **two words** and check if they are the same. Do not distinguish between uppercase and lowercase letters. As output, print "**yes**" or "**no**".
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | Hello<br>Hello | yes |
 | SoftUni<br>softuni | yes |
@@ -593,28 +592,29 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#3
 | beer<br>vodka | no |
 | HeLlO<br>hELLo | yes |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Преди сравняване на думите, ги обърнете в долен регистър, за да не оказва влияние размера на буквите (главни/малки): **`String wordFirst = scanner.next().toLowerCase()`**.
+Before comparing words, turn them to lowercase so that the size of the letters (uppercase/lowercase) does not affect: **`String wordFirst = scanner.next().toLowerCase().`**
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#10](https://judge.softuni.bg/Contests/Practice/Index/651#10).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#10](https://judge.softuni.bg/Contests/Practice/Index/651#10).
 
 
-### Задача: информация за скоростта
+### Exercise: Speed information
 
-Да се напише програма, която **въвежда скорост** (десетично число) и отпечатва **информация за скоростта**. 
+The next task is to write a **program that reads input data from the console**. As input data, enter **speed**(a decimal number). As output, print information about the speed.
 
-* При скорост **до 10** (включително), отпечатайте "**slow**". 
-* При скорост **над 10** и **до 50**, отпечатайте "**average**". 
-* При скорост **над 50 и до 150**, отпечатайте "**fast**". 
-* При скорост **над 150 и до 1000**, отпечатайте "**ultra fast**". 
-* При по-висока скорост, отпечатайте "**extremely fast**".
+* At speed **up to 10** (inclusive), print "**slowly**".
+* At speed **above 10 and up to 50**, print "**average**".
+* At speed **above 50 and up to 150**, print "**fast**".
+* At speed **above 150 and up to 1000**, print "**ultra fast**".
+* At greater speed, print "**extremely fast**".
 
-#### Примерен вход и изход
 
-| Вход | Изход |
+#### Sample input and output
+
+| Input | Output |
 | --- | ---- |
 | 8 | slow |
 | 49.5 | average |
@@ -622,44 +622,45 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#3
 | 160 | ultra fast |
 | 3500 | extremely fast |
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#11](https://judge.softuni.bg/Contests/Practice/Index/651#11).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#11](https://judge.softuni.bg/Contests/Practice/Index/651#11).
 
 
-### Задача: лица на фигури
+### Exercise: Faces of figures
 
-Да се напише програма, която **въвежда размерите на геометрична фигура** и **пресмята лицето й**. Фигурите са четири вида: квадрат (**square**), правоъгълник (**rectangle**), кръг (**circle**) и триъгълник (**triangle**).
+The next task is to write a **program that reads input data from the console**. As input data, enter **the dimensions of a geometric figure** and **calculates its fac**. The figures are of four types: **square**, **rectangle**, **circle**, and **triangle**.
 
-На първия ред на входа се чете вида на фигурата (`square`, `rectangle`, `circle`, `triangle`).
-* Ако фигурата е **квадрат**, на следващия ред се чете едно число – дължина на страната му.
-* Ако фигурата е **правоъгълник**, на следващите два реда се четат две числа – дължините на страните му.
-* Ако фигурата е **кръг**, на следващия ред се чете едно число – радиусa на кръга.
-* Ако фигурата е **триъгълник**, на следващите два реда се четат две числа – дължината на страната му и дължината на височината към нея.
+On the first line of input data, read the type of figure (`square`, `rectangle`, `circle`, `triangle`).
+* If the figure is a **square**, on the next line read one number - the length of its side.
+* If the figure is a **rectangle**, on the next two lines read two numbers - the lengths of its sides.
+* If the figure is a **circle**, on the next line read one number - the radius of the circle.
+* If the figure is a **triangle**, on the next two lines read two numbers - the length of its side and the length of the height to it.
 
-Резултатът да се закръгли до **3 цифри след десетичния знак**. 
 
-#### Примерен вход и изход
+Format the output up to **3 digits after the decimal point**.
 
-| Вход | Изход |
+#### Sample input and output
+
+| Input | Output |
 | --- | ---- |
 | square<br>5 | 25 |
 | rectangle<br>7<br>2.5 | 17.5 |
 | circle<br>6 | 113.097 |
 | triangle<br>4.5<br>20 | 45 |
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#12](https://judge.softuni.bg/Contests/Practice/Index/651#12).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#12](https://judge.softuni.bg/Contests/Practice/Index/651#12).
 
 
-### Задача: време + 15 минути
+### Exercise: Calculate what will be the time in 15 minutes 
 
-Да се напише програма, която **въвежда час и минути** от 24-часово денонощие и изчислява колко ще е **часът след 15 минути**. Резултатът да се отпечата във формат **`hh:mm`**. Часовете винаги са между 0 и 23, а минутите винаги са между 0 и 59. Часовете се изписват с една или две цифри. Минутите се изписват винаги с по две цифри и с **водеща нула**, когато е необходимо.
+The next task is to write a **program that reads input data from the console**. As input data, enter **the hour and minutes** (each on a separate line) of a 24-hour day and calculates **what time it will be in 15 minutes**. Print the output in **`hh: mm`** format. The hours are always between 0 and 23, and the minutes are always between 0 and 59. The hours are print in one or two digits. Minutes are always displayed with two digits and a **leading zero** when necessary.
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 1<br>46 | 2:01 |
 | 0<br>01 | 0:16 |
@@ -667,47 +668,47 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#3
 | 11<br>08 | 11:23 |
 | 12<br>49 | 13:04 |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Добавете 15 минути и направете няколко проверки. Ако минутите надвишат 59, **увеличете часовете** с 1 и **намалете минутите** с 60. По аналогичен начин разгледайте случая, когато часовете надвишат 23. При печатането на минутите, **проверете за водеща нула**.
+To solve the problem, add 15 minutes and do a few checks. If the minutes exceed 59, **increase the hours by 1** and **decrease the minutes by 60**. Similarly, consider the case when the hours exceed 23. When printing the minutes, check for **leading zero**.
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#13](https://judge.softuni.bg/Contests/Practice/Index/651#13).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#13](https://judge.softuni.bg/Contests/Practice/Index/651#13).
 
-### Задача: еднакви 3 числа
+### Exercise: Equals three numbers
 
-Да се напише програма, в която се въвеждат **3 числа** и се отпечатва дали те са еднакви (**yes** / **no**).
+The next task is to write a **program that reads input data from the console**. As input data, enter **3 integers**. As output, print if they are equals (**yes** / **no**).
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 5<br>5<br>5 | yes |
 | 5<br>4<br>5 | no |
 | 1<br>2<br>3 | no |
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#14](https://judge.softuni.bg/Contests/Practice/Index/651#14).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#14](https://judge.softuni.bg/Contests/Practice/Index/651#14).
 
 
-### Задача: \* изписване на число от 0 до 100 с думи
+### Exercise: \* Write a number from 0 to 100 in English
 
-Да се напише програма, която превръща число в диапазона [**0 … 100**] в текст. 
+The next task is to write a **program that reads input data from the console**. As input data, enter a number in the range [**0 … 100**] and convert the number into a text. As output print  the text in English.
 
-#### Примерен вход и изход
+#### Sample input and output
 
-| Вход | Изход |
+| Input | Output |
 | --- | ---- |
 | 25 | twenty five |
 | 42 | forty two |
 | 6  | six |
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
-Проверете първо за **едноцифрени числа** и ако числото е едноцифрено, отпечатайте съответната дума за него. След това проверете за **двуцифрени числа**. Тях отпечатвайте на две части: лява част (**десетици** = числото / 10) и дясна част (**единици** = числото % 10). Ако числото има 3 цифри, трябва да е 100 и може да се разгледа като специален случай.
+To solve the problem, first, check for **one-digit numbers**, and if the number is one-digit, print the appropriate text for it. Then check for **two-digit numbers**. Print them in two parts: left part (**tens** = number / 10) and right part (**units** = number% 10). If the number has three digits, it must be 100 and considered as a special case.
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/651#15](https://judge.softuni.bg/Contests/Practice/Index/651#15).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/651#15](https://judge.softuni.bg/Contests/Practice/Index/651#15).
