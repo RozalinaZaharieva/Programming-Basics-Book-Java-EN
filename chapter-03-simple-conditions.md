@@ -1,6 +1,6 @@
 # Chapter 3.1 Simple Conditions
 
-This chapter will discuss **conditional statements in the Java language**. Depending on the condition, a program may have different behavior. First will be explained the syntax of conditional operators **`if`** and **`if-else`** with appropriate examples. Then will see in what range (**scope**) a variable lives. Finally, we will look through **debugging** techniques to track the step-by-step execution of our programs.
+This chapter will discuss **conditional statements in the Java language**. Depending on the condition, a program may have different behavior. First will be explained the syntax of conditional operators **`if`** and **`if-else`** with appropriate examples. Then we will see in what range (**scope**) a variable lives. Finally, we will look through **debugging** techniques to track the step-by-step execution of our programs.
 
 ## Video
 
