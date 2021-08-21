@@ -1,33 +1,33 @@
-# Глава 6.1. Вложени цикли
+# Chapter 6.1 Nested loops
 
-В настоящата глава ще разгледаме **вложените цикли** и как да използваме **`for`** цикли за **чертане** на различни **фигурки на конзолата**, които се състоят от символи и знаци, разположени в редове и колони на конзолата. Ще използваме **единични** и **вложени цикли** (цикли един в друг), **изчисления** и **проверки**, за да отпечатваме на конзолата прости и не чак толкова прости фигурки по зададени размери.
+This chapter will discuss **nested loops in the Java language**. We will use **`for`** loops to **draw** different **figures** containing symbols and signs arranged in rows and columns **on the console**. We will use **`for` loop** and **nested loops** (loop statement inside another loop statement), **calculations** and **checks**, to print on the console simple and not so simple figures in given sizes.
 
 
-## Видео
+## Video
 
 <div class="video-player">
-  Гледайте видео-урок по тази глава тук: <a target="_blank" href="https://www.youtube.com/watch?v=96SoFtFTPBc">https://www.youtube.com/watch?v=96SoFtFTPBc</a>.
+  Watch the video lesson about what we will learn in this chapter: <a target="_blank" href="https://www.youtube.com/watch?v=96SoFtFTPBc">https://www.youtube.com/watch?v=96SoFtFTPBc</a>.
 </div>
 
 
-### Пример: правоъгълник от 10 x 10 звездички
+### Example: A rectangle with a size of 10 x 10 asterisks
 
-Да се начертае в конзолата правоъгълник от **10 x 10** звездички.
+Draw, on the console, a rectangle with a size of **10 x 10** asterisks.
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
-|(няма)|<code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code>|
+|(no input)|<code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code><br><code>\*\*\*\*\*\*\*\*\*\*</code>|
 
-#### Насоки и подсказки
-За изпълнението на задачата ще прибегнем до малка хитрост, ще използваме метод. В глава 10 ще се запознаем подробно с това какво представляват методите и как се използват. Методът ще ни позволи да изпълнем един и същ код повече от един път и на повече от едно място в дадена програма. На този етап няма да разкриваме повече от концепцията на методите.
+#### Hint and Guidelines
+To perform the task, we will use a method. In Chapter 10, we will look in detail at what methods are and how to use them. The method will allow us to execute the same code more than once and in more than one place in a program. At this stage, we will not reveal more than the concept of methods.
 
 ![](assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png)
 
-Как работи примерът? Инициализира се управляваща променлива на **цикъла `i = 0`** и тя се увеличава на всяка итерация, докато е **по-малка от 10** (проверката се извършва след всяко изпълнение на тялото на цикъла и след итерацията). Така кодът в тялото на цикълa се изпълнява точно **10 пъти**. Кодът в тялото на цикъла ще се извика за всеки ред на правоъгълника. В метода ще се използва класа **`StringBuffer`**, който при всяко завъртане на цикъла **`for`** (този в метода), ще "залепи" по една звездичка, като по този начин ще създаде ред от 10 звездички. След като приключи изпълнението на цикъла, низът ще бъде върнат на основния цикъл и ще се изведе полученият ред. Това ще се повтори за всички 10 итерации, като по този начин на всяко завъртане на цикъла ще получаваме по цял един ред.
+How does the example work? The variable of the **cycle (`i = 0`)** is initialized and is incremented on each iteration, as long as it is **less than 10**. The check is performed after each execution of the code, in the body of the loop, and after the iteration). Thus the code in the body of the loop is executed exactly **ten times**. The code, in the body of the loop, will be called for each row of the rectangle. Here as you can see, we call the method **`generateFrom`**. The method will use the class **`StringBuffer`** and another **`for`** loop. Each iteration of a **`for`** loop (the one in the method) will append one asterisk, thus creating a row of ten asterisks. When the execution, of the loop (the one in the method), is completed the resulting string will be returned to the loop in the Main class. These steps will be repeated ten times so that after each iteration, we will get a whole line.
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#0](https://judge.softuni.bg/Contests/Practice/Index/657#0).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#0](https://judge.softuni.bg/Contests/Practice/Index/657#0).
 
 
 ### Пример: правоъгълник от N x N звездички
