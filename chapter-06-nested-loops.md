@@ -1,4 +1,4 @@
-# Chapter 6.1 Nested loops
+# Chapter 6.1 Nested Loops
 
 This chapter will discuss **nested loops in the Java language**. We will use **`for`** loops to **draw** different **figures** containing symbols and signs arranged in rows and columns **on the console**. We will use **`for` loop** and **nested loops** (loop statement inside another loop statement), **calculations** and **checks**, to print on the console simple and not so simple figures in given sizes.
 
@@ -49,14 +49,14 @@ To perform the task, we will use the **`Scanner`** class, which allows us to rea
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#1](https://judge.softuni.bg/Contests/Practice/Index/657#1).
 
 
-## Nested loops
+## Nested Loops
 
-Вложените цикли представляват конструкция, при която **в тялото на един цикъл** (външен) **се изпълнява друг цикъл** (вътрешен). За всяко завъртане на външния цикъл, вътрешният се извърта **целият**. Това се случва по следния начин:
+Nested loops are construction in which **in the body of one loop** (called outer), **another loop is performed** (called inner). For each iteration of the outer loop, the inner is perform **the whole**. This happens as follows:
 
- - При стартиране на изпълнение на вложени цикли първо **стартира външният цикъл**: извършва се **инициализация** на неговата управляваща променлива и след проверка за край на цикъла, се изпълнява кодът в тялото му.
- - След това се **изпълнява вътрешният цикъл**. Извършва се инициализация на началната стойност на управляващата му променлива, прави се проверка за край на цикъла и се изпълнява кодът в тялото му.
- - При достигане на зададената стойност за **край на вътрешния цикъл**, програмата се връща една стъпка нагоре и се продължава започналото изпълнение предходния (външния) цикъл. Променя се с една стъпка управляващата променлива за външния цикъл, проверява се дали условието за край е удовлетворено и **започва ново изпълнение на вложения (вътрешния) цикъл**.
- - Това се повтаря докато променливата на външния цикъл достигне условието за **край на цикъла**.
+ - When starting the execution of nested loops, first **the outer loop starts** which includes the following steps: the control variable is **initialized**, then checks the condition for the end of the loop, and then the code in the body starts to execute.
+ - Then **the inner loop is executed**, which includes the same steps: the control variable is initialized, then checks the condition for the end of the loop, and then the code in the body starts to execute.
+ - When the condition for **the end of the inner loop** is met, the program returns one step up, and the started execution of the outer loop continues. This results that the variable of the outer loop is changing (incremented), then checks whether the end condition of the outer loop is satisfied. If not, **a new execution of the nested (inner) loop starts**.
+ - This is repeated until the outer loop variable reaches the **end of loop** condition.
 
 Ето и един **пример**, с който нагледно да илюстрираме вложените цикли. Целта е да се отпечата отново правоъгълник от **`n`** * **`n`** звездички, като за всеки ред се извърта цикъл от **1** до **`n`**, а за всяка колона се извърта вложен цикъл от **1** до **`n`**:
 
