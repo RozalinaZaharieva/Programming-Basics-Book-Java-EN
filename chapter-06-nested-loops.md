@@ -23,7 +23,7 @@ To perform the task, we will use a method. In Chapter 10, we will look in detail
 
 ![](assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png)
 
-How does the example work? The variable of the **cycle (`i = 0`)** is initialized and is incremented on each iteration, as long as it is **less than 10**. The check is performed after each execution of the code, in the body of the loop, and after the iteration). Thus the code in the body of the loop is executed exactly **ten times**. The code, in the body of the loop, will be called for each row of the rectangle. Here as you can see, we call the method **`generateFrom`**. The method will use the class **`StringBuffer`** and another **`for`** loop. Each iteration of a **`for`** loop (the one in the method) will append one asterisk, thus creating a row of ten asterisks. When the execution, of the loop (the one in the method), is completed the resulting string will be returned to the loop in the Main class. These steps will be repeated ten times so that after each iteration, we will get a whole line.
+How does the example work? The variable of the **cycle (`i = 0`)** is initialized and is incremented on each iteration, as long as it is **less than 10** (the check is performed after each execution of the code, in the body of the loop, and after the iteration). Thus the code in the body of the loop is executed exactly **ten times**. The code, in the body of the loop, will be called for each row of the rectangle. Here as you can see, we call the method **`generateFrom`**. The method will use the class **`StringBuffer`** and another **`for`** loop. Each iteration of a **`for`** loop (the one in the method) will append one asterisk, thus creating a row of ten asterisks. When the execution, of the loop (the one in the method), is completed the resulting string will be returned to the loop in the Main class. These steps will be repeated ten times so that after each iteration, we will get a whole line.
 
 #### Test the code in the Judge System
 
@@ -34,17 +34,17 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#0
 
 Да се напише програма, чийто вход е цяло положително число **n** и извежда в конзолата **правоъгълник от N x N звездички**.
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |2|<code>\*\*</code><br><code>\*\*</code>|3|<code>\*\*\*</code><br><code>\*\*\*</code><br><code>\*\*\*</code>|4|<code>\*\*\*\*</code><br><code>\*\*\*\*</code><br><code>\*\*\*\*</code><br><code>\*\*\*\*</code>|
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
 За решаване на тази задача, ще използваме класа **`Scanner`**, който ще ни позволи да прихванем подадения размер на фигурата.
 
 ![](assets/chapter-6-1-images/02.Rectangle-of-N-x-N-stars-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
 Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#1](https://judge.softuni.bg/Contests/Practice/Index/657#1).
 
@@ -68,53 +68,53 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#0
 
 Да се начертае на конзолата квадрат от **N x N** звездички:
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |2|<code>\* \*</code><br><code>\* \*</code>|3|<code>\* \* \*</code><br><code>\* \* \*</code><br><code>\* \* \*</code>|4|<code>\* \* \* \*</code><br><code>\* \* \* \*</code><br><code>\* \* \* \*</code><br><code>\* \* \* \*</code>|
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
 Задачата е аналогична на предходната. Тук обаче е необходимо да се обмисли как да бъде изведен интервал след звездичките така, че да няма излишни интервали в началото или края.
 
 ![](assets/chapter-6-1-images/03.Square-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#2](https://judge.softuni.bg/Contests/Practice/Index/657#2).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#2](https://judge.softuni.bg/Contests/Practice/Index/657#2).
 
 
 ### Пример: триъгълник от долари
 
 Да се напише програма, която въвежда число **n** и печата **триъгълник от долари**.
 
-|Вход|Изход|Вход|Изход|Вход|Изход
+|Input|Output|Input|Output|Input|Output
 |---|---|---|---|---|---|
 |3|<code>$</code><br><code>$ $</code><br><code>$ $ $</code>|4|<code>$</code><br><code>$ $</code><br><code>$ $ $</code><br><code>$ $ $ $</code>|5|<code>$</code><br><code>$ $</code><br><code>$ $ $</code><br><code>$ $ $ $</code><br><code>$ $ $ $ $</code>|
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
 Задачата е **сходна** с тези за рисуване на **правоъгълник** и **квадрат**. Отново ще използваме **вложени цикли**, но тук има **уловка**. Разликата е в това, че **броят на колонките**, които трябва да отпечатаме, зависи от **реда**, на който се намираме, а не от входното число **`n`**. От примерните входни и изходни данни забелязваме, че **броят на доларите зависи** от това на кой **ред** се намираме към момента на печатането, т.е. 1 знак долар означава първи ред, 2 знака долар означават втори ред и т.н. Нека разгледаме долния пример по-подробно. Виждаме, че **променливата** на **вложения** цикъл е обвързана с променливата на **външния**. По този начин нашата програма печата желания триъгълник.
 
 ![](assets/chapter-6-1-images/04.Triangle-of-dollars-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#3](https://judge.softuni.bg/Contests/Practice/Index/657#3).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#3](https://judge.softuni.bg/Contests/Practice/Index/657#3).
 
 
 ### Пример: квадратна рамка
 
 Да се напише програма, която въвежда цяло положително число **n** и чертае на конзолата **квадратна рамка** с размер **n \* n**.
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>+ - +</code><br><code>&#124; - &#124;</code><br><code>+ - +</code>|4|<code>+ - - +</code><br><code>&#124; - - &#124;</code><br><code>&#124; - - &#124;</code><br><code>+ - - +</code>|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |5|<code>+ - - - +</code><br><code>&#124; - - - &#124;</code><br><code>&#124; - - - &#124;</code><br><code>&#124; - - - &#124;</code><br><code>+ - - - +</code>|6|<code>+ - - - - +</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>&#124; - - - - &#124;</code><br><code>+ - - - - +</code>|
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
 Можем да решим задачата по следния начин:
 * Четем от конзолата числото **`n`**.
@@ -126,25 +126,25 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#0
 
 ![](assets/chapter-6-1-images/05.Square-frame-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#4](https://judge.softuni.bg/Contests/Practice/Index/657#4).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#4](https://judge.softuni.bg/Contests/Practice/Index/657#4).
 
 
 ### Пример: ромб от звездички
 
 Да се напише програма, която въвежда цяло положително число **n** и извежда в конзолата **ромб от звездички** с размер **n**.
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |1|<code>\*</code>|2|<code>&nbsp;\*&nbsp;</code><br><code>\*&nbsp;\*</code><br><code>&nbsp;\*&nbsp;</code><br>|
 
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>&nbsp;&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*&nbsp;\*&nbsp;</code><br><code>\*&nbsp;\*&nbsp;\*</code><br><code>&nbsp;\*&nbsp;\*&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;&nbsp;</code>|4|<code>&nbsp;&nbsp;&nbsp;\*&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*&nbsp;\*&nbsp;\*&nbsp;</code><br><code>\*&nbsp;\*&nbsp;\*&nbsp;\*</code><br><code>&nbsp;\*&nbsp;\*&nbsp;\*&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;\*&nbsp;&nbsp;&nbsp;</code>|
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
 За да решим поставената задача е необходимо мислено да разделим ромба на **две части**: **горна** (включва **и** средния ред) и **долна**. За **извеждането** в конзолата на всяка една част ще използваме **два** цикъла, като читателя сам трябва да открие зависимостта между **`n`** и променливите в циклите.
 
@@ -157,32 +157,32 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#0
 
 ![](assets/chapter-6-1-images/06.Rhombus-of-stars-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#5](https://judge.softuni.bg/Contests/Practice/Index/657#5).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#5](https://judge.softuni.bg/Contests/Practice/Index/657#5).
 
 
 ### Пример: коледна елха
 
 Да се напише програма, която въвежда число **n** (1 ≤ n ≤ 100) и извежда "коледна елха" с височина **n+1**.
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |1|<code>&nbsp;&nbsp;&#124;&nbsp;&nbsp;</code><br><code>\*&nbsp;&#124;&nbsp;\*</code>|2|<code>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;\*&nbsp;&#124;&nbsp;\*&nbsp;</code><br><code>\*\*&nbsp;&#124;&nbsp;\*\*</code>|
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>&nbsp;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*&nbsp;&#124;&nbsp;\*&nbsp;&nbsp;</code><br><code>&nbsp;\*\*&nbsp;&#124;&nbsp;\*\*&nbsp;</code><br><code>\*\*\*&nbsp;&#124;&nbsp;\*\*\*</code>|4|<code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;&nbsp;\*&nbsp;&#124;&nbsp;\*&nbsp;&nbsp;&nbsp;</code><br><code>&nbsp;&nbsp;\*\*&nbsp;&#124;&nbsp;\*\*&nbsp;&nbsp;</code><br><code>&nbsp;\*\*\*&nbsp;&#124;&nbsp;\*\*\*&nbsp;</code><br><code>\*\*\*\*&nbsp;&#124;&nbsp;\*\*\*\*</code>|
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
 От примерите виждаме, че **елхата** може да бъде **разделена** на **три** логически части. **Първата** част са **звездичките (`*`) и празните места преди и след тях**, **средната** част е **` | `**, а **последната** част са отново **звездички** (`*`), като този път **празни** места има само **преди** тях. Отпечатването може да бъде постигнато само с **един цикъл** и отново ще прибегнем до метода, който изпозлвахме в началото. 
 
 ![](assets/chapter-6-1-images/07.Christmas-tree-01.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#6](https://judge.softuni.bg/Contests/Practice/Index/657#6).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#6](https://judge.softuni.bg/Contests/Practice/Index/657#6).
 
 
 ## Чертане на по-сложни фигури
@@ -192,15 +192,15 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#0
 ### Пример: слънчеви очила
 Да се напише програма, която въвежда цяло число **n** (3 ≤ n ≤ 100) и печата слънчеви очила с размери **5\*n x n** като в примерите:
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |3|<code>\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*</code><br><code>\*////\*&#124;&#124;&#124;\*////\*</code><br><code>\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*</code>|4|<code>\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*</code><br><code>\*//////\*&#124;&#124;&#124;&#124;\*//////\*</code><br><code>\*//////\*&nbsp;&nbsp;&nbsp;&nbsp;\*//////\*</code><br><code>\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*</code><br>|
 
-|Вход|Изход|
+|Input|Output|
 |---|---|
 |5|<code>\*\*\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*\*\*</code><br><code>\*////////\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*////////\*</code><br><code>\*////////\*&#124;&#124;&#124;&#124;&#124;\*////////\*</code><br><code>\*////////\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*////////\*</code><br><code>\*\*\*\*\*\*\*\*\*\*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*\*\*\*\*\*\*\*\*\*</code><br>|
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
 От примерите виждаме, че очилата могат да се разделят на **три части** – горна, средна и долна. По-долу е част от кода, с който задачата може да се реши.
 
@@ -212,25 +212,25 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#0
 
 ![](assets/chapter-6-1-images/08.Sunglasses-02.png)
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#7](https://judge.softuni.bg/Contests/Practice/Index/657#7).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#7](https://judge.softuni.bg/Contests/Practice/Index/657#7).
 
 
 ### Пример: къщичка
 
 Да се напише програма, която въвежда число **n** (2 ≤ **n** ≤ 100) и печата **къщичка** с размери **n x n**, точно като в примерите:
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |2|<code>**</code><br><code>&#124;&#124;</code><br>|3|<code>-\*-</code><br><code>\*\*\*</code><br><code>&#124;\*&#124;</code>|4|<code>-\*\*-</code><br><code>\*\*\*\*</code><br><code>&#124;\*\*&#124;</code><br><code>&#124;\*\*&#124;</code>
 
-|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|
 |---|---|---|---|
 |5|<code>--\*--</code><br><code>-\*\*\*-</code><br><code>\*\*\*\*\*</code><br><code>&#124;\*\*\*&#124;</code><br><code>&#124;\*\*\*&#124;</code>|8|<code>---\*\*---</code><br><code>--\*\*\*\*--</code><br><code>-\*\*\*\*\*\*-</code><br><code>\*\*\*\*\*\*\*\*</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br><code>&#124;\*\*\*\*\*\*&#124;</code><br>|
 
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
 Разбираме от условието на задачата, че къщичката е с размери **`n` x `n`**. Това, което виждаме от примерните вход и изход, е че:
 
@@ -311,28 +311,28 @@ int result = (int) Math.ceil(3 / 2f);
 
 Ако всичко сме написали както трябва, задачата ни е решена.
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#8](https://judge.softuni.bg/Contests/Practice/Index/657#8).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#8](https://judge.softuni.bg/Contests/Practice/Index/657#8).
 
 
 ### Пример: диамант
 
 Да се напише програма, която въвежда цяло число **n** (1 ≤ **n** ≤ 100) и печата диамант с размери **n**, като в следните примери:
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |1|<code>\*</code><br>|2|<code>\*\*</code>|3|<code>-\*-</code><br><code>\*-\*</code><br><code>-\*-</code>|
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |4|<code>-\*\*-</code><br><code>\*--\*</code><br><code>-\*\*-</code>|5|<code>--\*--</code><br><code>-\*-\*-</code><br><code>\*---\*</code><br><code>-\*-\*-</code><br><code>--\*--</code><br>|6|<code>--\*\*--</code><br><code>-\*--\*-</code><br><code>\*----\*</code><br><code>-\*--\*-</code><br><code>--\*\*--</code><br>|
 
-|Вход|Изход|Вход|Изход|Вход|Изход|
+|Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
 |7|<code>---\*---</code><br><code>--\*-\*--</code><br><code>-\*---\*-</code><br><code>\*-----\*</code><br><code>-\*---\*-</code><br><code>--\*-\*--</code><br><code>---\*---</code><br>|8|<code>---\*\*---</code><br><code>--\*--\*--</code><br><code>-\*----\*-</code><br><code>\*------\*</code><br><code>-\*----\*-</code><br><code>--\*--\*--</code><br><code>---\*\*---</code><br>|9|<code>----\*----</code><br><code>---\*-\*---</code><br><code>--\*---\*--</code><br><code>-\*-----\*-</code><br><code>\*-------\*</code><br><code>-\*-----\*-</code><br><code>--\*---\*--</code><br><code>---\*-\*---</code><br><code>----\*----</code>|
 
-#### Насоки и подсказки
+#### Hint and Guidelines
 
 Това, което знаем от условието на задачата, е че диамантът е с размер **`n` x `n`**.
 
@@ -390,9 +390,9 @@ int result = (int) Math.ceil(3 / 2f);
 <td><b>Повторението на едно и също парче код се смята за лоша практика</b>, тъй като кодът става труден за поддръжка. Да си представим, че имаме код (напр. логиката за чертането на ред от диаманта) на още няколко места в програмата и се налга да направим някаква промяна. За целта би било необходимо да коригираме кода на всяко едно място, където сме сложили този код. А сега нека се замислим върху следния казус: Какво би станало, ако същият този код трябва да се използва не 1, 2 или 3 пъти, а десетки пъти. Един от подходите за справяне с този проблем е използването на <b>методи</b>. Можете да потърсите допълнителна информация за тях в Интернет, или да прегледате <a href="chapter-10-methods.md">глава “10” (Методи)</a>.</td>
 </tr></table>
 
-#### Тестване в Judge системата
+#### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#9](https://judge.softuni.bg/Contests/Practice/Index/657#9).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#9](https://judge.softuni.bg/Contests/Practice/Index/657#9).
 
 
 ## Какво научихме от тази глава?
