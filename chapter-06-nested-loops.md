@@ -12,7 +12,7 @@ This chapter will discuss **nested loops in the Java language**. We will use **`
 
 ### Example: A rectangle with a size of 10 x 10 asterisks
 
-Draw, on the console, a rectangle with a size of **10 x 10** asterisks.
+Write a program that draw, on the console, a rectangle with a size of **10 x 10** asterisks.
 
 |Input|Output|
 |---|---|
@@ -30,9 +30,9 @@ How does the example work? The variable of the **cycle (`i = 0`)** is initialize
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#0](https://judge.softuni.bg/Contests/Practice/Index/657#0).
 
 
-### Пример: правоъгълник от N x N звездички
+### Example: A rectangle with a size of N x N asterisks
 
-Да се напише програма, чийто вход е цяло положително число **n** и извежда в конзолата **правоъгълник от N x N звездички**.
+Write a program that reads an integer **n** from the console, and as output, draws a **rectangle with a size of n x n asterisks**.
 
 |Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
@@ -40,16 +40,16 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#0
 
 #### Hint and Guidelines
 
-За решаване на тази задача, ще използваме класа **`Scanner`**, който ще ни позволи да прихванем подадения размер на фигурата.
+To perform the task, we will use the **`Scanner`** class, which allows us to read the input size of the figure from the console. 
 
 ![](assets/chapter-6-1-images/02.Rectangle-of-N-x-N-stars-01.png)
 
 #### Test the code in the Judge System
 
-Тествайте решението си тук: [https://judge.softuni.bg/Contests/Practice/Index/657#1](https://judge.softuni.bg/Contests/Practice/Index/657#1).
+Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#1](https://judge.softuni.bg/Contests/Practice/Index/657#1).
 
 
-## Вложени цикли
+## Nested loops
 
 Вложените цикли представляват конструкция, при която **в тялото на един цикъл** (външен) **се изпълнява друг цикъл** (вътрешен). За всяко завъртане на външния цикъл, вътрешният се извърта **целият**. Това се случва по следния начин:
 
