@@ -64,9 +64,9 @@ Here is an **example** with which to illustrate the nested loops. The goal is to
 
 How does the example work? After the initialization of the **outer** loop, its **body** begins to execute, which contains **another (inner) loop**. The inner loop returns **`numberOfstars`** as a row of asterisks. After the **inner** loop **completes** its execution, the program control returns at the first iteration of the outer one, and  **the outer loop continues** to execute. A row (**`System.out.println ()`**) exists to the body of the outer loop, which will take care to move to the next row when the inner loop completes. Without this code, all asterisks will be output on one line. If we use **`println ()`** in the inner loop instead of **`print ()`**, all asterisks are printed on separate lines. You can try and see for yourself. The **increment** of the variable (increase, in our case by 1) of the **outer** loop follows, and the whole **inner** loop starts execution again. The inner loop executes as many times as the body of the outer loop is executed, in the case of **`numberOfstars`** times.
 
-### Пример: квадрат от звездички
+### Example: A square with a size of 10 x 10 asterisks
 
-Да се начертае на конзолата квадрат от **N x N** звездички:
+Write a program that draws on the console a square of **N x N** asterisks: 
 
 |Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
@@ -74,7 +74,7 @@ How does the example work? After the initialization of the **outer** loop, its *
 
 #### Hint and Guidelines
 
-Задачата е аналогична на предходната. Тук обаче е необходимо да се обмисли как да бъде изведен интервал след звездичките така, че да няма излишни интервали в началото или края.
+The task is similar to the previous one. Here, it is necessary to consider how to print a space after the asterisks so that there are no unnecessary spaces at the beginning or end. 
 
 ![](assets/chapter-6-1-images/03.Square-01.png)
 
@@ -83,9 +83,9 @@ How does the example work? After the initialization of the **outer** loop, its *
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#2](https://judge.softuni.bg/Contests/Practice/Index/657#2).
 
 
-### Пример: триъгълник от долари
+### Example: a triangle of dollar signs
 
-Да се напише програма, която въвежда число **n** и печата **триъгълник от долари**.
+Write a program that reads an integer number **n** from the console and returns as output **a triangle of dollar signs**.
 
 |Input|Output|Input|Output|Input|Output
 |---|---|---|---|---|---|
@@ -93,7 +93,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#2
 
 #### Hint and Guidelines
 
-Задачата е **сходна** с тези за рисуване на **правоъгълник** и **квадрат**. Отново ще използваме **вложени цикли**, но тук има **уловка**. Разликата е в това, че **броят на колонките**, които трябва да отпечатаме, зависи от **реда**, на който се намираме, а не от входното число **`n`**. От примерните входни и изходни данни забелязваме, че **броят на доларите зависи** от това на кой **ред** се намираме към момента на печатането, т.е. 1 знак долар означава първи ред, 2 знака долар означават втори ред и т.н. Нека разгледаме долния пример по-подробно. Виждаме, че **променливата** на **вложения** цикъл е обвързана с променливата на **външния**. По този начин нашата програма печата желания триъгълник.
+The task is **similar** to those for drawing **rectangle** and **square**. We will use **nested loops** again, but there is a **trick** here. The difference is that the **number of columns** we need to print as output depends on the **row** we are on, not the input integer **`n`**. From the sample input and output data, we notice that **the number of dollars depends on** on which **line** we are at the time of printing, ie. one dollar sign means at the first line, two dollar signs at the second line, etc. Let's look at the example below in more detail. We see that the **variable** of the **nested** loop is bound to the variable of the **outer** loop. In this way, our program prints the desired triangle.
 
 ![](assets/chapter-6-1-images/04.Triangle-of-dollars-01.png)
 
@@ -102,9 +102,9 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#2
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#3](https://judge.softuni.bg/Contests/Practice/Index/657#3).
 
 
-### Пример: квадратна рамка
+### Example: square frame 
 
-Да се напише програма, която въвежда цяло положително число **n** и чертае на конзолата **квадратна рамка** с размер **n \* n**.
+Write a program that reads an integer number **n** from the console and returns as output **a square frame** with a size of **n \* n**.
 
 |Input|Output|Input|Output|
 |---|---|---|---|
@@ -116,13 +116,13 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#3
 
 #### Hint and Guidelines
 
-Можем да решим задачата по следния начин:
-* Четем от конзолата числото **`n`**.
-* Отпечатваме **горната част**: първо знак **`+`**, после **n-2** пъти **`-`** и накрая знак **`+`**.
-* Отпечатваме **средната част**: печатаме **n-2** реда като първо печатаме знак **`|`**, после **n-2** пъти **`-`** и накрая отново знак **`|`**. Това можем да го постигнем с вложени цикли.
-* Отпечатваме **долната част**: първо **`+`**, после **n-2** пъти **`-`** и накрая **`+`**.
+We can solve the task as follows:
+* We read an integer **`n`** from the console.
+* We print **the upper part** of the frame: first the sign **`+`**, then **n-2** times the sign **`-`** and finally the sign **`+`**.
+* We print **the middle part** of the frame: we print **n-2** lines as first print the sign **`|`**, then **n-2** times the sign **`-`** and finally again the sign **`|`**. We can achieve this with nested loops.
+* We print **the lower part** of the frame: first print the sign **`+`**, then **n-2** times the sign **`-`** and finally the sign **`+`**. 
 
-Ето и примерна имплементация на описаната идея, с вложени цикли:
+Here is an example implementation of the described logic, above, with nested loops: 
 
 ![](assets/chapter-6-1-images/05.Square-frame-01.png)
 
