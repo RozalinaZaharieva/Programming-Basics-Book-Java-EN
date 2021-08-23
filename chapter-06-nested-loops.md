@@ -267,13 +267,13 @@ To draw **the roof**, we write down how many **asterisks** we start within a var
 
 ![](assets/chapter-6-1-images/09.House-03.png)
 
-We calculate the length of **the roof**, and it equals half of **`n`**. Assign the result to the variable **`roofLength``*.
+We calculate the length of **the roof**, and it equals half of **`n`**. Assign the result to the variable **`roofLength`*.
 
 ![](assets/chapter-6-1-images/09.House-04.png)
 
 It is important to note that when **`n`** is an odd number, the length of the roof is one row more than that of **the base**. In **Java**, when you divide two numbers of integer type with a remainder, the result will be a number without a remainder.
 
-Пример:
+Example:
 
 ```java
 int result = 3 / 2; // резултат 1
@@ -285,32 +285,31 @@ If we want to round up the result, we need to use the method **`Math.ceil(…)`*
 int result = (int) Math.ceil(3 / 2f);
 ```
 
-В този пример делението не е от 2 целочислени числа. "`f`" след число показва, че даденото число е от тип **`float`** (число с плаваща запетая). Резултатът от **`3 / 2f`** е **`1.5f`**. **`Math.ceil(…)`** закръгля делението нагоре. В нашият случай **`1.5f`** ще стане 2. **`(int)`** се използва, за да може да трансформираме типа обратно в **`int`**.
+In this example, the division is not between two integers. The letter "`f`" after a number shows that this number is of **`float`** type (a floating-point number). The result of **`3 / 2f`** is **`1.5f`**. **`Math.ceil(…)`** method rounds up the result and, in this case, **`1.5f`** will become 2. We write **`(int)`** before **`Math.ceil(…)`**, so we can transfer the result back to **`int`** type and assign it to the variable **`result`**.
 
-След като сме изчислили дължината на покрива, завъртаме цикъл от 0 до **`roofLength`**. На всяка итерация ще:
-* Изчисляваме броя **тирета**, които трябва да изрисуваме. Броят ще е равен на **`(n - stars) / 2`**. Записваме го в променлива **`padding`**.
+After we have calculated the length of the roof, we use a loop from 0 to **`roofLength`**. On each iteration we will:
+
+* Calculate the number of **dashes** we need to draw. The number will be equal to **`(n - stars) / 2`**. Assign it in variable **`padding`**.
 
 ![](assets/chapter-6-1-images/09.House-05.png)
 
-* Отпечатваме на конзолата: "**тирета**" (**`padding`** на брой пъти) + "**звезди**" (**`stars`** пъти) + "**тирета**" (**`padding`** пъти). 
+* Print on the console: "**dashes**" (*`padding`** times) + "**asterisks**" (**`stars`** times) + "**dashes**" (**`padding`** times).
 
 ![](assets/chapter-6-1-images/09.House-06.png)
 
-* Преди да свърши итерацията на цикъла добавяме 2 към **`stars`** (броя на **звездите**).
+* Before the iteration is over, we add 2 to **`stars`** (the number of the **asterisks**).
 
 ![](assets/chapter-6-1-images/09.House-07.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td>Не е добра идея да правим събирания на много на брой символни низове по показания по-горе начин, защото това води до <b>проблеми със скоростта</b> (performance issues). За повече информация посетете:  <a href="https://bg.wikipedia.org/wiki/%D0%9D%D0%B8%D0%B7#String_Builder">https://bg.wikipedia.org/wiki/Низ#String_Builder</a></td>
+<td>It is not a good practice to concatenate many character strings as it is shown above, because this leads to <b>performance</b> issues. Learn more at: <a href="https://bg.wikipedia.org/wiki/%D0%9D%D0%B8%D0%B7#String_Builder">https://bg.wikipedia.org/wiki/Низ#String_Builder</a></td>
 </tr></table>
 
-След като сме приключили с **покрива**, е време за **основата**. Тя е по-лесна за печатане:
-* Започваме с цикъл от **0** до **n** (изключено).
-* Отпечатваме на конзолата: **`|`** + **`*`** (**`n - 2`** на брой пъти) + **`|`**.
+After we have finished with the roof, it is time for the base. It is easier to print:
+* We use loop from **0** to **n** (not inclusive).
+* We print on the console: **`|`** + **`*`** (**`n - 2`** times) + **`|`**.
 
 ![](assets/chapter-6-1-images/09.House-08.png)
-
-Ако всичко сме написали както трябва, задачата ни е решена.
 
 #### Test the code in the Judge System
 
