@@ -219,7 +219,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#7
 
 
 ### Example: House
-Write a program that reads an integer number **n** (2 ≤ **n** ≤ 100) from the console and returns as output **a house** with a size of **n x n**, just like the examples below.
+Write a program that reads an integer number **n** (2 ≤ **n** ≤ 100) from the console and returns as output **a house** with a size of **n x n**, just like examples below.
 
 |Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
@@ -249,7 +249,6 @@ According to the requirements of the task, the house is with a size of **`n` x `
 
 ##### The base
 * The height is **`n`** rows.
-* Съставена е от **звезди** (`*`) и **вертикални черти** (`|`).
 * It consists of **asrerisks** (`*`) and **pipes** (`|`).   
 * Each row consists of two **pipes** (one at the beginning and one at the end of the row) and a sequence of **`n - 2`** **asterisks** between the pipes.
  
@@ -316,9 +315,9 @@ After we have finished with the roof, it is time for the base. It is easier to p
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#8](https://judge.softuni.bg/Contests/Practice/Index/657#8).
 
 
-### Пример: диамант
+### Example: Diamond 
 
-Да се напише програма, която въвежда цяло число **n** (1 ≤ **n** ≤ 100) и печата диамант с размери **n**, като в следните примери:
+Write a program that reads an integer number **n** (1 ≤ **n** ≤ 100) from the console and returns as output **a diamond** with a size of **n**, just like examples below.
 
 |Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
@@ -334,53 +333,55 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#8
 
 #### Hint and Guidelines
 
-Това, което знаем от условието на задачата, е че диамантът е с размер **`n` x `n`**.
+According to the requirements of the task, have **`n`** rows and **`n`** columns to draw a diamond, but from the input and output data, we can see the following:
 
-От примерните вход и изход можем да си направим изводите, че всички редове съдържат точно по **`n`** символа и всички редове, с изключение на горните върхове, имат по **2 звезди** (**`*`**). Можем мислено да разделим диаманта на 2 части:
-* **Горна** част. Тя започва от горният връх до средата.
-* **Долна** част. Тя започва от реда след средата до най-долния връх (включително).
+* All lines contain exactly **`n`** characters, and all lines, except the upper and the bottom ones, have **two asterisks** (**`*`**).
 
-##### Горна част
-* Ако **n** е **нечетно**, то тя започва с **1 звезда** (**`*`**).
-* Ако **n** е **четно**, то тя започва с **2 звезди** (**`**`**).
-* С всеки ред надолу, звездите се отдалечават една от друга.
-* Пространството преди, между, и след **звездите** (**`*`**) е запълнено с **тирета** (**`-`**).
+We can divide (mentally) the diamond into **two parts**: 
+* **Upper** part. Include from the top of the diamond and to the middle of the diamond (includes **and** the middle row).
+* **Lower** part. Include from the row immediately after the middle of the diamond and to the bottom of the diamond(inclusive).
 
-##### Долна част
-* С всеки ред надолу, звездите се събират една към друга. Това означава, че пространството (**тиретата**) между тях намалява, а пространството (**тиретата**) отляво и отдясно се увеличава.
-* В най-долната си част е с 1 или 2 **звезди**, спрямо това дали **n** е нечетно или четно.
+##### Upper part
+* If **n** is **odd**, begins with **1 asterisk** (**`*`**).
+* If **n** is **even**, begins with **2 asterisks** (**`**`**).
+* With each row down, the asterisks move away from each other.
+* The space before, between, and after the **asterisks** (**`*`**) is filled with **dashes** (**`-`**). 
 
-##### Горна и долна част на диаманта
-* На всеки ред звездите са заобиколени от външни **тирета**, с изключение на средния ред.
-* На всеки ред има пространство между двете **звезди**, с изключение на първия и последния ред (понякога **звездата е 1**).
+##### Lower part
+* With each row down, the asterisks come together. It means that the space (**dashes**) between them decreases, and the space (**dashes**) on the left and right increases.
+* At its bottom, it has 1 or 2 **asterisks**, depending on whether **n** is odd or even.
 
-Прочитаме стойността на **n** от конзолата и я записваме в променлива от тип **`int`**.  
+##### Upper and lower part
+* On each row, the asterisks are surrounded from the outer side (the left or the right one) by **dashes**, except for the middle row.
+* Each row has a space between the two **asterisks**, except for the first and last row (sometimes **the asterisk is one**).
+
+We read an integer **`n`** from the console and assign the value of an integer to a variable of type **`int`**. 
 
 ![](assets/chapter-6-1-images/10.Diamond-01.png)
 
-Започваме да чертаем горната част на диаманта. Първото нещо, което трябва да направим, е да изчислим началната стойност на външната бройка **тирета `leftRight`** (тиретата от външната част на **звездите**). Тя е равна на **`(n - 1) / 2`**, закръглено надолу.
+We start drawing the upper part of the diamond. The first thing we need to do is to calculate the number of the outer **dashes `leftRight`** (the dashes on the outer side of the **asterisks**). It is equal to **`(n - 1) / 2`**, rounded down.
 
 ![](assets/chapter-6-1-images/10.Diamond-02.png)
 
-След като сме изчислили **`leftRight`**, започваме да чертаем **горната част** на диаманта. Може да започнем, като завъртим **цикъл** от **`0`** до **`n / 2 + 1`** (закръглено надолу).  
+After we have calculated **`leftRight`**, we start drawing the **upper part** of the diamond. We can use **a loop** from **`0`* to **`n / 2 + 1`** (rounded down).
 
-При всяка итерация на цикъла трябва да се изпълнят следните стъпки:
-* Рисуваме по конзолата левите **тирета** (с дължина **`leftRight`**) и веднага след тях първата **звезда**.
+At each iteration of the loop the following steps are performed:
+* We draw as an output on the console **dashes** on the left side of the diamond (with length equals to **`leftRight`**) and right after them the first **asterisk**.
 
 ![](assets/chapter-6-1-images/10.Diamond-03.png)
 
-* Ще изчислим разстоянието между двете **звезди**. Може да го направим като извадим от **n** дължината на външните **тирета**, както и числото 2 (бройката на **звездите**, т.е. очертанията на диаманта). Резултата от тази разлика записваме в променлива **`mid`**. 
+* We will calculate the distance between the two **asterisks**. We can do this by subtracting from **n** the number of the outer **dashes** and the number 2 (the number of the **asterisks**, ie. the diamond's outline). The result of the subtraction assign to a variable **`mid`**.
 
 ![](assets/chapter-6-1-images/10.Diamond-04.png)
 
-* Ако **`mid`** е по-малко от 0, то тогава знаем, че на реда трябва да има 1 звезда. Ако е по-голямо или равно на 0, то тогава трябва да начертаем **тирета** с дължина **`mid`** и една **звезда** след тях.
-* Рисуваме на конзолата десните външни **тирета** с дължина **`leftRight`**. 
+* If **`mid`** is lower than 0, we know that on the row should be only 1 asterisk. If it is higher or equal to 0 then we have to print **dashes** with length equals to **`mid`** and one **asterisk** after them.
+* We draw as an output on the console **dashes** on the right side of the diamond with length equals to **`leftRight`**.
 
 ![](assets/chapter-6-1-images/10.Diamond-05.png)
 
-* В края на цикъла намаляваме **`leftRight`** с 1 (**звездите `*`** се отдалечават).
+* In the end of the loop we decrease **`leftRight`** by 1 (**the asterisks `*`** are moving away from each other).
 
-Готови сме с горната част.
+We are ready with the upper part.
 
 Рисуването на долната част е доста подобна на рисуването на горната част. Разликите са, че вместо да намаляваме **`leftRight`** с 1 към края на цикъла, ще увеличаваме **`leftRight`** с 1 в началото на цикъла. Също така, **цикълът ще е от 0 до `(n - 1) / 2`**.   
 
