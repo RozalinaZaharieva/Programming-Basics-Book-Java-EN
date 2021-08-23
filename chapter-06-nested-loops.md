@@ -83,7 +83,7 @@ The task is similar to the previous one. Here, it is necessary to consider how t
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#2](https://judge.softuni.bg/Contests/Practice/Index/657#2).
 
 
-### Example: a triangle of dollar signs
+### Example: A triangle of dollar signs
 
 Write a program that reads an integer number **n** from the console and returns as output **a triangle of dollar signs**.
 
@@ -102,7 +102,7 @@ The task is **similar** to those for drawing **rectangle** and **square**. We wi
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#3](https://judge.softuni.bg/Contests/Practice/Index/657#3).
 
 
-### Example: square frame 
+### Example: Square frame 
 
 Write a program that reads an integer number **n** from the console and returns as output **a square frame** with a size of **n \* n**.
 
@@ -131,9 +131,9 @@ Here is an example implementation of the described logic, above, with nested loo
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#4](https://judge.softuni.bg/Contests/Practice/Index/657#4).
 
 
-### Пример: ромб от звездички
+### Example: A diamond of asterisks 
 
-Да се напише програма, която въвежда цяло положително число **n** и извежда в конзолата **ромб от звездички** с размер **n**.
+Write a program that reads an integer number **n** from the console and returns as output **a diamond of asterisks** with a size of **n**.
 
 |Input|Output|Input|Output|
 |---|---|---|---|
@@ -146,14 +146,14 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#4
 
 #### Hint and Guidelines
 
-За да решим поставената задача е необходимо мислено да разделим ромба на **две части**: **горна** (включва **и** средния ред) и **долна**. За **извеждането** в конзолата на всяка една част ще използваме **два** цикъла, като читателя сам трябва да открие зависимостта между **`n`** и променливите в циклите.
+To solve the task, we divide (mentally) the rhombus into **two parts**: **upper** (includes **and** the middle row) and **lower**. We will use **two** loops for each part of the rhombus to print the **output** in the console. The reader must find the relationship between **`n`** and the variables in the loops.
 
-За първия цикъл може да използваме следните насоки:
-* Отпечатвaме **`n-row`** интервала.
-* Отпечатваме **`*`**.
-* Отпечатваме **`row-1`** пъти **` *`**.
+For the upper part of the rhombus (first loop) we can use the following guidelines:
+* We print **`n-row`** intervals.
+* We print **`*`**.
+* We print **`row-1`** times **`*`**. 
 
-**Втората** (долна) част ще изведем по **аналогичен** начин, което отново оставяме читателя да се опита да направи сам.
+We will use the **similar** way to output the **lower** part of the rhombus, but we leave the reader to try to do it himself. 
 
 ![](assets/chapter-6-1-images/06.Rhombus-of-stars-01.png)
 
