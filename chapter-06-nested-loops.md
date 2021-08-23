@@ -162,9 +162,9 @@ We will use the **similar** way to output the **lower** part of the rhombus, but
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#5](https://judge.softuni.bg/Contests/Practice/Index/657#5).
 
 
-### Пример: коледна елха
+### Example: Christmas tree
 
-Да се напише програма, която въвежда число **n** (1 ≤ n ≤ 100) и извежда "коледна елха" с височина **n+1**.
+Write a program that reads an integer number **n** (1 ≤ n ≤ 100) from the console and returns as output **Christmas tree** with a height of **n+1**.
 
 |Input|Output|Input|Output|
 |---|---|---|---|
@@ -176,7 +176,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#5
 
 #### Hint and Guidelines
 
-От примерите виждаме, че **елхата** може да бъде **разделена** на **три** логически части. **Първата** част са **звездичките (`*`) и празните места преди и след тях**, **средната** част е **` | `**, а **последната** част са отново **звездички** (`*`), като този път **празни** места има само **преди** тях. Отпечатването може да бъде постигнато само с **един цикъл** и отново ще прибегнем до метода, който изпозлвахме в началото. 
+As we saw in the previous examples, we can apply a similar principle and **divide** the **Christmas tree** into **three** logical parts. **The first** part is the **asterisks (`*`) and the spaces before and after them**, the **middle** part is **`|`**, and **the last** part are again **asterisks** (`*`), and this time **empty** places are only **before** them. Printing the output can be done with **one loop**, and again we will use the method as we have done at the beginning of this chapter.
 
 ![](assets/chapter-6-1-images/07.Christmas-tree-01.png)
 
