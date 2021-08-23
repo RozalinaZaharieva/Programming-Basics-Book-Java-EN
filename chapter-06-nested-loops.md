@@ -218,9 +218,7 @@ When printing the **middle** part, we need to **check** whether the line is **`(
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#7](https://judge.softuni.bg/Contests/Practice/Index/657#7).
 
 
-### Пример: къщичка
-
-Да се напише програма, която въвежда число **n** (2 ≤ **n** ≤ 100) и печата **къщичка** с размери **n x n**, точно като в примерите:
+### Example: House
 Write a program that reads an integer number **n** (2 ≤ **n** ≤ 100) from the console and returns as output **a house** with a size of **n x n**, just like the examples below.
 
 |Input|Output|Input|Output|Input|Output|
@@ -234,45 +232,46 @@ Write a program that reads an integer number **n** (2 ≤ **n** ≤ 100) from th
 
 #### Hint and Guidelines
 
-Разбираме от условието на задачата, че къщичката е с размери **`n` x `n`**. Това, което виждаме от примерните вход и изход, е че:
+According to the requirements of the task, the house is with a size of **`n` x `n`**, but from the input and output data, we can see the following:
 
-* Къщичката е разделена на 2 части: **покрив и основа**. 
+* The house consists of two parts: **roof and base**.
 
 ![](assets/chapter-6-1-images/09.House-01.png)
 
-* Когато **`n`** е четно число, върхът на къщичката е "тъп".
-* Когато **`n`** е нечетно число, **покривът** е с един ред по-голям от **основата**.
+* When **`n`** is an even number, the roof of the house is obtuse.
+* When **`n`** is odd, **the roof** is one row larger than **the base**.
 
-##### Покрив
-* Съставен е от **звезди** (`*`) и **тирета** (`-`).
-* В най-високата си част има една или две звезди, спрямо това дали **n** e нечетно или четно, както и тирета.
-* В най-ниската си част има много звезди и малко или никакви тирета.
-* С всеки един ред по-надолу, **звездите** се увеличават с 2, а **тиретата** намаляват с 2.
+##### The roof
+* It consists of **asrerisks** (`*`) and **dashes** (`-`). 
+* At the top part of the roof, we have one or two stars depending on whether **`n`** is even or odd (also related to the dashes). 
+* In the lowest part, we have many stars and a few or no dashes.  
+* At each row of the roof (looking from top to bottom), the stars are increased by two, and the dashes are decreased by two.
 
-##### Основа
-* Широка е **`n`** на брой реда.
+##### The base
+* The height is **`n`** rows.
 * Съставена е от **звезди** (`*`) и **вертикални черти** (`|`).
-* Редовете представляват 2 **вертикални черти** - по една в началото и в края на реда, както и **звезди** между вертикалните черти с дължина на низа **`n - 2`**.  
-
-Прочитаме **`n`** от конзолата и записваме стойността в променлива от тип **`int`**.  
+* It consists of **asrerisks** (`*`) and **pipes** (`|`).   
+* Each row consists of two **pipes** (one at the beginning and one at the end of the row) and a sequence of **`n - 2`** **asterisks** between the pipes.
+ 
+We read an integer **`n`** from the console and assign the value of an integer to a variable of type **`int`**. 
 
 ![](assets/chapter-6-1-images/09.House-02.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Много е важно да проверяваме дали са валидни входните данни!</b> В тези задачи не е проблем директно да обръщаме прочетеното от конзолата в тип <b><code>int</code></b>, защото изрично е казано, че ще получаваме валидни целочислени числа. Ако обаче правим по-сериозни приложения, е добра практика да проверяваме входните данни. Какво ще стане, ако вместо число потребителят въведе буквата "А"?</td>
+<td><b>It is of high importance to perform checks on whether the input data is correct!</b> In the current tasks, it is not a problem to directly convert the data from the console into <b><code>int</code></b> type because it is said that we will read valid integers. If you are making more complex programs, it is a good practice to check the input data.</td>
 </tr></table>
 
-За да начертаем **покрива**, записваме колко ще е началният брой **звезди** в променлива **`stars`**:
-* Ако **`n`** е **четно** число, ще са 2 броя.
-* Ако е **нечетно**, ще е 1 брой.
+To draw **the roof**, we write down how many **asterisks** we start within a variable called **`stars`**:
+* If **`n`** is **even**, they are two.
+* If **`n`** is **odd** it is one
 
 ![](assets/chapter-6-1-images/09.House-03.png)
 
-Изчисляваме дължината на **покрива**. Тя е равна на половината от **`n`**. Резултата записваме в променливата **`roofLength`**.
+We calculate the length of **the roof**, and it equals half of **`n`**. Assign the result to the variable **`roofLength``*.
 
 ![](assets/chapter-6-1-images/09.House-04.png)
 
-Важно е да се отбележи че, когато **`n`** е нечетно число, дължината на покрива е по-голяма с един ред от тази на **основата**. В езика **Java**, когато два числа от целочислен тип се делят и има остатък, то резултатът ще е число без остатъка.
+It is important to note that when **`n`** is an odd number, the length of the roof is one row more than that of **the base**. In **Java**, when you divide two numbers of integer type with a remainder, the result will be a number without a remainder.
 
 Пример:
 
@@ -280,7 +279,7 @@ Write a program that reads an integer number **n** (2 ≤ **n** ≤ 100) from th
 int result = 3 / 2; // резултат 1
 ```
 
-Ако искаме да закръглим резултата нагоре, трябва да използваме метода **`Math.ceil(…)`**:
+If we want to round up the result, we need to use the method **`Math.ceil(…)`**: 
 
 ```java
 int result = (int) Math.ceil(3 / 2f);
