@@ -52,18 +52,18 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#1
 
 ## Nested Loops
 
-Nested loops are construction in which **in the body of one loop** (called outer), **another loop is performed** (called inner). For each iteration of the outer loop, the inner is perform **the whole**. This happens as follows:
+Nested loops are construction in which **in the body of one loop** statement (called outer), **another loop statement is performed** (called inner). For each iteration of the outer loop statement, the inner one is performed **the whole**. This happens as follows:
 
  - When starting the execution of nested loops, first **the outer loop starts** which includes the following steps: the control variable is **initialized**, then checks the condition for the end of the loop, and then the code in the body starts to execute.
  - Then **the inner loop is executed**, which includes the same steps: the control variable is initialized, then checks the condition for the end of the loop, and then the code in the body starts to execute.
  - When the condition for **the end of the inner loop** is met, the program returns one step up, and the started execution of the outer loop continues. This results that the variable of the outer loop is changing (incremented), then checks whether the end condition of the outer loop is satisfied. If not, **a new execution of the nested (inner) loop starts**.
  - This is repeated until the outer loop variable reaches the **end of loop** condition.
 
-Here is an **example** with which to illustrate the nested loops. The goal is to print a rectangle of **`n`** x **`n`** asterisks, where for each row iterates the outer loop from **1** to **`n`**, and for each column iterates a inner loop from **1** to **`n`**:
+Here is an **example** with which to illustrate the nested loops. The goal is to print a rectangle of **`n`** x **`n`** asterisks, where for each row, the outer loop iterates from **1** to **`n`**, and for each column iterates an inner loop from **1** to **`n`**:
 
 ![](assets/chapter-6-1-images/00.Nested-loops-01.png)
 
-How does the example work? After the initialization of the **outer** loop, its **body** begins to execute, which contains **another (inner) loop**. The inner loop returns **`numberOfstars`** as a row of asterisks. After the **inner** loop **completes** its execution, the program control returns at the first iteration of the outer one, and  **the outer loop continues** to execute. A row (**`System.out.println ()`**) exists to the body of the outer loop, which will take care to move to the next row when the inner loop completes. Without this code, all asterisks will be output on one line. If we use **`println ()`** in the inner loop instead of **`print ()`**, all asterisks are printed on separate lines. You can try and see for yourself. The **increment** of the variable (increase, in our case by 1) of the **outer** loop follows, and the whole **inner** loop starts execution again. The inner loop executes as many times as the body of the outer loop is executed, in the case of **`numberOfstars`** times.
+How does the above example work? After the initialization of the **outer** loop, its **body** begins to execute, which in turn contains **another (inner) loop**. The inner loop returns **`numberOfstars`** as a string of asterisks. After the **inner** loop **completes** its execution, the program control returns at the first iteration of **the outer loop**, and the code within it **continues to execute**. A statement (**`System.out.println ()`**) exists in the body of the outer loop. This statement will move the cursor to the following line when the inner loop completes its execution. Without this code, we will print all asterisks on one line. Usage of **`println()`** method in the inner loop instead of the **`print()`** method will print all asterisks on separate lines. You can try and see for yourself. Then **increment** of the variable (in our case by 1) of **the outer loop** follows, and the whole **inner** loop starts execution again. The inner loop executes as many times as the body of the outer loop is executed (in our case **`numberOfstars`** times).
 
 ### Example: A square with a size of 10 x 10 asterisks
 
