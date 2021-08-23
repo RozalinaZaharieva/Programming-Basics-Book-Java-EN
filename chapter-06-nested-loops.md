@@ -355,9 +355,13 @@ We can divide (mentally) the diamond into **two parts**:
 * On each row, the asterisks are surrounded from the outer side (the left or the right one) by **dashes**, except for the middle row.
 * Each row has a space between the two **asterisks**, except for the first and last row (sometimes **the asterisk is one**).
 
+##### Reading the Input Data
+
 We read an integer **`n`** from the console and assign the value of an integer to a variable of type **`int`**. 
 
 ![](assets/chapter-6-1-images/10.Diamond-01.png)
+
+##### Printing the upper part of the diamond
 
 We start drawing the upper part of the diamond. The first thing we need to do is to calculate the number of the outer **dashes `leftRight`** (the dashes on the outer side of the **asterisks**). It is equal to **`(n - 1) / 2`**, rounded down.
 
@@ -383,12 +387,16 @@ At each iteration of the loop the following steps are performed:
 
 We are ready with the upper part.
 
-Рисуването на долната част е доста подобна на рисуването на горната част. Разликите са, че вместо да намаляваме **`leftRight`** с 1 към края на цикъла, ще увеличаваме **`leftRight`** с 1 в началото на цикъла. Също така, **цикълът ще е от 0 до `(n - 1) / 2`**.   
+##### Printing the lower part of the diamond
+
+Printing the lower part is similar to that of the upper part. The differences are: 
+* Increase instead of decrease **`leftRight`** with one, but at the beginning of the loop
+* **The loop will be from 0 to `(n - 1) / 2`**.
 
 ![](assets/chapter-6-1-images/10.Diamond-06.png)
 
 <table><tr><td><img src="/assets/alert-icon.png" style="max-width:50px" /></td>
-<td><b>Повторението на едно и също парче код се смята за лоша практика</b>, тъй като кодът става труден за поддръжка. Да си представим, че имаме код (напр. логиката за чертането на ред от диаманта) на още няколко места в програмата и се налга да направим някаква промяна. За целта би било необходимо да коригираме кода на всяко едно място, където сме сложили този код. А сега нека се замислим върху следния казус: Какво би станало, ако същият този код трябва да се използва не 1, 2 или 3 пъти, а десетки пъти. Един от подходите за справяне с този проблем е използването на <b>методи</b>. Можете да потърсите допълнителна информация за тях в Интернет, или да прегледате <a href="chapter-10-methods.md">глава “10” (Методи)</a>.</td>
+<td><b>Repeating a code is considered bad practice</b>, because the code becomes very hard to maintain. Let's imagine that we have a piece of code (e.g. the logic for drawing a row from the diamond example) at a few more places and we decide to change it. For this we will have to go through all the places and change it everywhere. Now let's imagine that you need to reuse a piece of code not 1, 2 or 3 times but tens of times. A way to overcome this problem is to use <b>methods</b>. You can look for additional information for methods in the Internet or to look at <a href="chapter-10-methods.md"> Chapter “10” (Methods)</a>.</td>
 </tr></table>
 
 #### Test the code in the Judge System
@@ -396,9 +404,9 @@ We are ready with the upper part.
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#9](https://judge.softuni.bg/Contests/Practice/Index/657#9).
 
 
-## Какво научихме от тази глава?
+## What we learned in this chapter?
 
-Научихме се да чертаем фигури с вложени **`for`** цикли:
+We learned to draw figures with nested **`for`** loops:
 
 ```java
 for (int r = 1; r <= 5; r++)
@@ -410,4 +418,4 @@ for (int r = 1; r <= 5; r++)
 }
 ```
 
-Научихме се, също и как **да използваме методи** за да избягваме повторението на едно и също парче код няколко пъти.
+We also learned that we can **use methods** to avoid repeating the code multiple times. 
