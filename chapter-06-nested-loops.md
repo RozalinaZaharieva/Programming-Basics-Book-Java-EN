@@ -176,7 +176,7 @@ Write a program that reads an integer number **n** (1 ≤ n ≤ 100) from the co
 
 #### Hint and Guidelines
 
-As we saw in the previous examples, we can apply a similar principle and **divide** the **Christmas tree** into **three** logical parts. **The first** part is the **asterisks (`*`) and the spaces before and after them**, the **middle** part is **`|`**, and **the last** part are again **asterisks** (`*`), and this time **empty** places are only **before** them. Printing the output can be done with **one loop**, and again we will use the method as we have done at the beginning of this chapter.
+As we saw in the previous examples, we can apply a similar principle and **divide** the **Christmas tree** into **three** logical parts. **The first** part is the **asterisks (`*`) and the spaces before and after them**, the **middle** part is **`|`**, and **the last** part are again **asterisks** (`*`), and this time **empty** spaces are only **before** them. Printing the output can be done with **one loop**, and again we will use the method as we have done at the beginning of this chapter.
 
 ![](assets/chapter-6-1-images/07.Christmas-tree-01.png)
 
@@ -185,12 +185,13 @@ As we saw in the previous examples, we can apply a similar principle and **divid
 Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#6](https://judge.softuni.bg/Contests/Practice/Index/657#6).
 
 
-## Чертане на по-сложни фигури
+## Drawing more complex figures
 
-Да разгледаме как можем да чертаем на конзолата фигури с по-сложна логика на конструиране, за които трябва повече да помислим преди да почнем да пишем.
+Let's look few exercises about how we can draw figures on the console with more complex logic. To solve these tasks, we need to think more about the program logic before we start writing.
 
-### Пример: слънчеви очила
-Да се напише програма, която въвежда цяло число **n** (3 ≤ n ≤ 100) и печата слънчеви очила с размери **5\*n x n** като в примерите:
+### Example: Sunglasses 
+
+Write a program that reads an integer number **n** (3 ≤ n ≤ 100) from the console and returns as output **sunglasses** with a size of **5\*n x n**, just like examples below.
 
 |Input|Output|Input|Output|
 |---|---|---|---|
@@ -202,13 +203,13 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#6
 
 #### Hint and Guidelines
 
-От примерите виждаме, че очилата могат да се разделят на **три части** – горна, средна и долна. По-долу е част от кода, с който задачата може да се реши.
+As we see in the examples below, we can apply a similar principle and divide the sunglasses into **three** logical parts - upper, middle, and lower. Below is part of the code with which we can solve the task.
 
-При рисуването на горния и долния ред трябва да се изпечатат **`2 * n`** звездички, **`n`** интервала и **`2 * n`** звездички.
+When drawing the top and bottom rows, use **`2 * n`** asterisks, **`n`** spaces, and **`2 * n`** asterisks as output.
 
 ![](assets/chapter-6-1-images/08.Sunglasses-01.png)
 
-При печатането на **средната** част трябва да **проверим** дали редът е **`(n-1) / 2 - 1`**, тъй като от примерите е видно, че на **този ред** трябва да печатаме **вертикални чертички** вместо интервали.
+When printing the **middle** part, we need to **check** whether the line is **`(n-1) / 2 - 1`**, because as the examples show on **this line**, we need to print **vertical dashes** instead of spaces.
 
 ![](assets/chapter-6-1-images/08.Sunglasses-02.png)
 
@@ -220,6 +221,7 @@ Test your solution here: [https://judge.softuni.bg/Contests/Practice/Index/657#7
 ### Пример: къщичка
 
 Да се напише програма, която въвежда число **n** (2 ≤ **n** ≤ 100) и печата **къщичка** с размери **n x n**, точно като в примерите:
+Write a program that reads an integer number **n** (2 ≤ **n** ≤ 100) from the console and returns as output **a house** with a size of **n x n**, just like the examples below.
 
 |Input|Output|Input|Output|Input|Output|
 |---|---|---|---|---|---|
