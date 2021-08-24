@@ -23,7 +23,6 @@ To solve the task, we will use a method. In Chapter 10, we will look in detail a
 
 ![](assets/chapter-6-1-images/01.Rectangle-of-10-x-10-stars-01.png)
 
-How does the example work? The variable of the **loop (`i = 0`)** is initialized and is incremented on each iteration, as long as it is **less than 10** (the check is performed after each execution of the code, in the body of the loop, and after the iteration). Thus the code in the body of the loop is executed exactly **ten times**. The code, in the body of the loop, will be called for each row of the rectangle. Here as you can see, we call the method **`generateFrom`**. The method will use the class **`StringBuffer`** and another **`for`** loop. Each iteration of a **`for`** loop (the one in the method) will append one asterisk, thus creating a row of ten asterisks. When the execution of the loop (the one in the method) is complete as a result we have a string. Then, the execution of the code returns to the point where we call the method. Then, prints the resulting string on the console.
 How does the example work? The control variable of the **loop (`i = 0`)** is initialized. The variable is incremented on each iteration, as long as it is **less than 10**. After each execution of the code in the body of the loop, and after the iteration, a check about the state of the variable is performed. Thus the code in the body of the loop is executed exactly **ten times** ie. for each row of the rectangle. In the body of the loop, we call the method **`generateFrom`**. The method uses the class **`StringBuffer`** and another **`for`** loop. Each iteration of a **`for`** loop (the one in the method) will append one asterisk, thus creating a row of ten asterisks. When the whole execution of the loop (the one in the method) finishes, we have a string of asterisks as a result. Then, the execution of the code returns to the point where we call the method. Then, prints the resulting string on the console.
 
 #### Test the code in the Judge System
@@ -75,7 +74,7 @@ Write a program that draws on the console a square of **N x N** asterisks:
 
 #### Hint and Guidelines
 
-The task is similar to the previous one. Here, it is necessary to consider how to print a space after the asterisks so that there are no unnecessary spaces at the beginning or end. 
+The task is similar to the previous one. Here, it is necessary to consider how to print a space after the asterisks so that there are no unnecessary spaces at the beginning or the end. 
 
 ![](assets/chapter-6-1-images/03.Square-01.png)
 
